@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6-2 使用bind()方法绑定元素的事件</title>
+<style>
+    div
+    {
+        margin: 10px 0px;
+    }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>bind()方法绑多个事件</h3>
+    <input id="btntest" type="button" value="点击或移除就不可用了" />
+    <script type="text/javascript">
+       $(function(){
+        $("#btntest").bind("click",function(){
+            $(this).attr("disabled","true");
+        });
+       });
+    </script>
+</body>
+</html>

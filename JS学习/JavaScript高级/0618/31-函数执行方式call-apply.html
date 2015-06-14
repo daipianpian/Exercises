@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>31-函数执行方式call-apply</title>
+	<script type="text/javascript">
+      //call()和apply()对函数进行调用
+
+      var addr = "china";
+      var age = 9;
+      function getInfo(ht,cl){
+      	console.log(ht+"--"+cl+"--"+this.addr+"--"+this.age);
+      }
+
+      var cat = {name:'kitty',addr:'波斯湾',age:10};
+      var dog = {name:'帝国黑背',addr:'德国',age:8};
+
+      //getInfo.call(函数内部this指引，参数1，参数2，参数3。。。参数n);
+      getInfo.call(cat,30,'yellow'); //波斯湾--10
+      getInfo.call(dog,80,'black'); //德国--8
+
+      //被调用函数.apply(内部this指引,[参数1，参数2。。。参数n])
+      getInfo.apply(cat,[20,'gold']);
+      getInfo.apply(dog,[60,'gray']);
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>31-函数执行方式call-apply</title>
+      <script type="text/javascript">
+      var addr = "china";
+      var age = 9;
+
+      function getInfo(ct,cl){
+            console.log(ct+"--"+cl+"--"+this.addr+"--"+this.age);
+      }
+
+      var cat = {name:'kitty',addr:'波斯湾',age:10};
+      var dog = {name:'帝国黑背',addr:'德国',age:8};
+
+      console.log(cat);
+      console.log(dog);
+
+      getInfo.call(cat,30,'啊啊啊');
+      getInfo.call(dog,20,'别别别');
+
+      getInfo.apply(cat,[30,'错错错']);
+      getInfo.apply(dog,[20,'淡淡地'])
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4-2 相对定位-未设置了偏移量</title>
+<style type="text/css">
+/*
+.box1{background:red; height:300px; position:relative; top:50px; left:30px;}
+ 相对定位position:relative
+*/
+.box1{background:red; height:300px;}
+.box2{background:green; height:100px; position:absolute; left:50px; top:20px;}/*绝对定位position:absolute*/
+.box3{background:blue; height:200px;}
+/*
+.box{position:relative; height:60px; background:yellow;} 
+祖先元素采用相对定位position:relative
+*/
+.box{height:60px; background:yellow;/*position:relative;*/} 
+.wrap{height:400px;width:80%;background:#999; position:absolute;}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+   <div class="box1">box1</div>
+   <div class="box">
+      <div class="box2">box2box2box2</div>
+   </div>
+   <div class="box3">box3</div>
+</div>
+</body>
+</html>

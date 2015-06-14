@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>11-执行环境可以访问的变量信息</title>
+	<script type="text/javascript">
+      //变量在当前、内部、深层环境都会起作用
+
+      var name="cat";
+      function f1(){
+      	var age=5;
+      	function f2(){
+      		var color="yellow";
+      		function f3(age){
+      			//参数 和 局部变量的优先级
+      			//“局部变量” 优先级 “高于参数”
+      			var age=29; //局部变量
+      			console.log("f3:"+name+"--"+age+"--"+color);//f3:cat--29--yellow
+      			function age(){}
+      		}
+      		f3(40);
+      	}
+      	f2();
+      }
+      f1();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>13-异常</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+
+        var name = "tom";
+        var age  = 25;
+
+        console.log(name);
+        console.log(age);
+
+        //addr变量一开始程序设计有此变量
+        //但是后期外部环境发生了变化，该变量没有给传递过来
+        //这样会导致我们的程序运行到第21行就停止运行了
+
+        console.log(addr);
+
+        console.log('every thing is ok');
+        
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>13-异常</title>
+    <script type="text/javascript">
+    var name = "tom";
+    var age  = 25;
+
+    try{
+
+    console.log(name);
+    console.log(age);
+    // console.log(addr);
+
+    var student = new Array(-10);
+
+    // var num = new 20();
+
+    // var dog = new eval();
+
+}catch(ex){ //控制器是Exception
+    // console.log(ex);
+    console.log(ex.massage);
+
+    // for (var k in ex){
+    //     console.log(k+"--"+ex[k]);
+    // }
+}
+
+    console.log('every thing is ok');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

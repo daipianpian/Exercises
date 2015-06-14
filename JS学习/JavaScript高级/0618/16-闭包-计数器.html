@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>16-闭包-计数器</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+        
+        //②闭包计数器
+
+        function f1(){
+            var num =0;
+            function f2(){
+                return ++num;
+            }
+            return f2;
+        }
+        var add_num = f1();
+
+        console.log(add_num()); //1
+        console.log(add_num()); //2
+        //由于计数器基数是f1函数内部的局部变量
+        //这样在外部就由于作用域链的关系不可能修改f1内部的num变量信息
+        num = 200;
+        console.log(add_num()); //3
+
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+        
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>16-闭包-计数器</title>
+    <script type="text/javascript">
+      function f1(){
+        var num=0;
+        function f2(){
+            return ++num;
+        }
+        return f2;
+      }
+      var add_num=f1();
+      console.log(add_num());
+      console.log(add_num());
+
+      num=100;
+      console.log(add_num());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

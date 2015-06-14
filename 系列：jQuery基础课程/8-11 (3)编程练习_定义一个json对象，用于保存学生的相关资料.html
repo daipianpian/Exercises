@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>挑战题</title>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+<input id="btnSearch" type="button" value="查询" />
+<ul>
+    <li>姓名:成绩</li>
+</ul>
+<script>
+var jsonStu = [
+    {"name":"张三","score":"90"},
+    {"name":"李四","score":"91"},
+    {"name":"王五","score":"92"}
+    ];
+$("#btnSearch").click(function(){
+    $.each(jsonStu,function(index,data){
+       $("ul").append("<li>"+data.name+data.score+"</li>") 
+    })
+})
+</script>
+</body>
+</html>

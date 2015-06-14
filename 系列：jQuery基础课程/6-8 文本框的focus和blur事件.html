@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6-8 文本框的focus和blur事件</title>
+<style>
+    div
+    {
+        margin: 10px 0px;
+    }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>表单中文本框的focus和blur事件</h3>
+    <input id="txtest" type="text" value="" />
+    <div></div>
+    <script type="text/javascript">
+       $(function(){
+          $("input").bind("focus",function(){
+            $("div").html("请输入您的姓名！");
+          });
+          $("input").bind("blur",function(){
+            $("div").html("你的名称不能为空！");
+          });
+       });
+    </script>
+</body>
+</html>

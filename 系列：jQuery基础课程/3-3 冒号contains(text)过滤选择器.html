@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3-3 :contains(text)过滤选择器</title>
+<script src="jquery-1.8.2.js"></script>
+<style>
+        ol
+        {
+            float: left;
+            width: 180px;
+        }
+        ol li
+        {
+            float: left;
+            width: 180px;
+            height: 23px;
+            line-height:23px;
+            margin: 2px 0px;
+        }
+</style>
+</head>
+
+<body>
+    <div>改变包含"jQuery"字符内容的背景色：</div>
+    <ol>
+        <li>强大的"jQuery"</li>
+        <li>"javascript"也很实用</li>
+        <li>"jQuery"前端必学</li>
+        <li>"java"是一种开发语言</li>
+        <li>前端利器——"jQuery"</li>
+    </ol>
+</body>
+<script type="text/javascript">
+    $("li:contains('jQuery')").css("background", "green");
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>17-闭包-数组</title>
+      <script type="text/javascript">
+        var num=new Array();
+
+        for(var i=0; i<=5; i++){
+            num[i]=function(){
+                  console.log(i);
+            }
+        }
+        i=100;
+        //以上代码从环境上看连个环境，window和function内部环境
+        //function内部环境访问外部变量信息（实际6个元素访问了6次）
+        //window环境的i变量只有一个，并且for循环执行完毕值为6
+        //因此每个数字元素访问到的结果都是6
+        //console.log(i);  6
+        /*
+        num[0]=function(){console.log(0)}
+        num[1]=function(){console.log(1)}
+        num[2]=function(){console.log(2)}
+        ......
+        num[5]=function(){console.log(5)}
+        */
+
+        num[4]();  //[6]  4
+        num[1]();  //[6]  1
+        num[3]();  //[6]  3
+        num[5]();
+
+        //num[6]();
+        //num[10]();
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

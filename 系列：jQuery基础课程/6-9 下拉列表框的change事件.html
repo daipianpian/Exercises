@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6-9 下拉列表框的change事件</title>
+<style>
+    div
+    {
+        margin: 10px 0px;
+    }
+    select
+    {
+        width:120px;
+    }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>下拉列表的change事件</h3>
+    <select id="seltest">
+      <option value="葡萄">葡萄</option>
+      <option value="苹果">苹果</option>
+      <option value="荔枝">荔枝</option>
+      <option value="香蕉">香蕉</option>
+    </select>
+    <script type="text/javascript">
+      $(function(){
+        $("select").bind("change",function(){
+          if ($(this).val()=="苹果")
+            $(this).css("background-color","red");
+          else
+            $(this).css("background-color","green");
+        });
+      });
+    </script>  
+</body>
+</html>

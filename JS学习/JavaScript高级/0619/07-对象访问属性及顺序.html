@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07-对象访问属性及顺序</title>
+	<script type="text/javascript">
+      //对象访问属性及顺序
+      function Wolf(){
+      	this.name = 'north wolf';
+      	this.fight = function(){//④  原型对象构造函数的成员
+      		console.log('多个打一个');
+      	}
+      }
+      var seven = new Wolf;
+      seven.fight = function(){
+      	console.log('7个打一个');
+      }
+
+      function Dog(){//③ 原型对象成员seven
+      	this.age = 6;
+      	this.fight = function(){//② 构造函数成员
+      		console.log('一个打一个');
+      	}
+      }
+      Dog.prototype = seven;
+      var yellow = new Dog;
+
+      yellow.fight = function(){//① 对象自己的成员
+      	console.log('一个打多个');
+      }
+
+      //console.log(yellow);
+      yellow.fight();
+
+      /*
+        对象访问属性
+        ①在本对象自己成员里边寻找
+        ②如果没有，就去构造函数寻找
+        ③如果再没有，就去原型对象的成员寻找
+        ④如果再没有，就去原型对象的构造函数里边寻找
+      */
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>07-对象访问属性及顺序</title>
+  <script type="text/javascript">
+    function Wolf(){
+        this.name = 'north wolf';
+        this.fight = function(){//④  原型对象构造函数的成员
+          console.log('多个打一个');
+        }
+    }
+
+    var seven = new Wolf;
+    seven.fight = function(){
+      console.log('7个打一个');
+    }
+
+    function Dog(){//③ 原型对象成员seven
+        this.age = 6;
+        this.fight = function(){//② 构造函数成员
+          console.log('一个打一个');
+        }
+    }
+
+    Dog.prototype = seven;
+    var yellow = new Dog;
+
+    yellow.fight = function(){//① 对象自己的成员
+        console.log('一个打多个');
+    }
+
+    yellow.fight();
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

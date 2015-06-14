@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9-4 图片放大镜插件——jqzoom</title>
+<style>
+#divtest { width: 282px; }
+#divtest .title { padding: 8px; background-color: Blue; color: #fff; height: 23px; line-height: 23px; font-size: 15px; font-weight: bold; }
+#divtest .content { padding: 8px 0px; background-color: #fff; font-size: 13px; }
+.fl { float: left; }
+.fr { float: right; }
+/*下面是远程文件*/
+.jqZoomTitle { z-index: 5000; text-align: center; font-size: 11px; font-family: Tahoma; height: 16px; padding-top: 2px; position: absolute; top: 0px; left: 0px; width: 100%; color: #FFF; background: #999; }
+.jqZoomPup { overflow: hidden; background-color: #FFF; -moz-opacity: 0.6; opacity: 0.6; filter: alpha(opacity = 60); z-index: 10; border-color: #c4c4c4; border-style: solid; cursor: crosshair; }
+.jqZoomPup img { border: 0px; }
+.preload { -moz-opacity: 0.8; opacity: 0.8; filter: alpha(opacity = 80); color: #333; font-size: 12px; font-family: Tahoma; text-decoration: none; border: 1px solid #CCC; background-color: white; padding: 8px; text-align: center; background-image: url(../Images/zoomloader.gif); background-repeat: no-repeat; background-position: 43px 30px; width: 90px;  * width:100px;
+height: 43px;  *height:55px;
+z-index: 10; position: absolute; top: 3px; left: 3px; }
+.jqZoomWindow { border: 1px solid #999; background-color: #FFF; }
+</style>
+<script type="text/javascript" src="http://www.imooc.com/data/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="http://www.imooc.com/data/jquery.jqzoom.js"></script>
+
+</head>
+
+<body>
+    <div id="divtest">
+        <div class="title">
+            <span class="fl">图片放大镜</span> 
+        </div>
+        <div class="content">
+            <a href="http://img.mukewang.com/52e4aec90001924d06800599.jpg" id="jqzoom" title="小兔子乖乖">
+    	         <img src="http://img.mukewang.com/52e4aee700012df702130212.jpg" alt=""/>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $("#jqzoom").jqzoom({ //绑定图片放大插件jqzoom
+                zoomWidth: 230, //小图片所选区域的宽
+                zoomHeight: 230, //小图片所选区域的高
+                zoomType: 'reverse' //设置放大镜的类型
+            });
+        });
+    </script>
+</body>
+</html>

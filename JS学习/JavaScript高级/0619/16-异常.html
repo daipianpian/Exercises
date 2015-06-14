@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>16-异常</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+
+        var name = "tom";
+        var age  = 25;
+        
+        try{
+            console.log(name);
+            console.log(age);
+
+            //自定义错误异常信息
+            if(typeof addr =='undefined'){
+                throw  {msg:'addr变量没有定义',linenumber:20,col:53,filename:'16.html'};
+            } else {
+                console.log(addr);
+            }
+
+        }catch(ex){
+            console.log(ex.msg);//获得具体异常错误信息
+        }
+
+        console.log('every thing is ok');
+        
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+    </body>
+</html> -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>16-异常</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+
+        var name = "tom";
+        var age  = 25;
+        
+        try{
+            console.log(name);
+            console.log(age);
+
+            //自定义错误异常信息
+            if(typeof addr == 'undefined'){
+                throw {msg:'addr变量没有定义',linenumber:20,col:53,filename:'16.html'};
+            }else{
+                console.log(addr);
+            }
+
+        }catch(ex){
+            console.log(ex.msg);//获得具体异常错误信息
+        }
+
+        console.log('every thing is ok');
+        
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9-8 访问子结点childNodes</title>
+</head>
+
+<body>
+<div>javascript<p>javascript</p><div>jQuery</div><h5>PHP</h5></div>
+
+<script type="text/javascript">
+  var x=document.getElementsByTagName("div")[0].childNodes;
+  for(var i=0; i<x.length; i++){
+	  document.write("节点类型:"+x[i].nodeName+" "+x[i].nodeType+" "+x[i].nodeValue+"<br />");
+	  }
+</script>
+</body>
+</html>

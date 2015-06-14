@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20-闭包-当前行高亮显示</title>
+	<script type="text/javascript">
+      window.onload = function(){
+      	//无序列表 高亮显示鼠标当前行
+      	lis = document.getElementsByTagName('li');
+      	for(var i=0; i<=lis.length; i++){
+      		//lis[i] 代表当前行的li元素节点
+      		lis[i].onmouseover = over(i);
+
+      		lis[i].onmouseout = out(i);
+      	}
+      }
+      /*利用闭包，给每个li元素节点都生成独立的闭包函数调用,
+        内部的n参数也是独立存在的*/
+      function over(n){
+      	function or(){
+      		lis[n].style.backgroundColor = "gray";
+      	}
+      	return or;
+      }
+      function out(m){
+      	function ot(){
+      		lis[m].style.backgroundColor = "";
+      	}
+      	return ot;
+      }
+	</script>
+</head>
+<body>
+	<ul>
+		<li>关羽</li>
+		<li>张飞</li>
+		<li>黄忠</li>
+		<li>魏延</li>
+	</ul>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>20-闭包-当前行高亮显示</title>
+      <script type="text/javascript">
+        window.onload = function(){
+            lis = document.getElementsByTagName('li');
+
+        for(var i=0; i<lis.length; i++){
+            lis[i].onmouseover = over(i);
+            lis[i].onmouseout = out(i);
+        }
+
+        function over(n){
+            function or(){
+                  lis[n].style.backgroundColor = "gray"; 
+            }
+            return or;
+        }
+
+        function out(m){
+            function ot(){
+                  lis[m].style.backgroundColor = "";
+            }
+            return ot;
+        }
+      }
+      </script>
+</head>
+<body>
+     <ul>
+            <li>关羽</li>
+            <li>张飞</li>
+            <li>黄忠</li>
+            <li>魏延</li>
+      </ul> 
+</body>
+</html>

@@ -1,0 +1,284 @@
+body{
+	width:1261px;
+	margin:0 auto;
+	background:url(../images/img1/index-bg5.jpg) repeat-x;
+}
+#content{
+	width:1028px;
+	height:867px;
+}
+#banner{
+	width:1022px;
+	height:279px;
+	border:4px solid #EEEEEE;
+	background:url(../images/img1/005.jpg) no-repeat;
+}
+
+#slider {    width: 1022px; /* important to be same as image width */
+    height: 279px; /* important to be same as image height */
+    position: relative; /* important */
+    overflow: hidden; /* important */
+}
+#slider img{  border: 0px;left: 0;  margin-left: 0;}
+#sliderContent {
+    width: 100%; /* important to be same as image width or wider */
+    position: absolute;
+    top: 0;
+    margin-left: 0;
+}
+.sliderImage {
+	width:1022px;
+	height:279px;
+    float: left;
+    position: relative;
+    display: none;
+    width: 100%;
+    height:279px;
+    left: 0;
+    margin-left: 0;
+}
+.sliderImage img{
+    float: left;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+}
+.sliderImage span {
+    position: absolute;
+    font: 14px 微软雅黑,sans-serif;
+    padding: 1px 9px;
+    width: 1022px;
+    height:45px;
+    line-height: 37px;
+    background-color: #000;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    color: #fff;
+    display: none;
+letter-spacing:0.3mm;
+}
+.clear {
+ clear: both;
+}
+.sliderImage span strong {
+    font-size: 80%;
+}
+.top {
+ top: 0;
+ left: 0;
+}
+.bottom {
+ bottom: 0;
+    left: 0;
+}
+
+
+
+#middle{
+	width:1028px;
+	height:316px;
+}
+#introduct{
+	width:447px;
+	height:278px;
+	float:left;
+	margin-top:20px;
+	border:1px solid #F4F4F4;
+	background:url(../images/img1/009.jpg) no-repeat;
+}
+.pic1{
+	margin-left:34px;
+	margin-top:4px;
+}
+#introduct h1{ 
+	color:#3F3F3F;
+	font-size:140%;
+	letter-spacing:1px;
+    margin-left:107px;
+	_margin-left:50px;
+	margin-top:-30px;
+	float:left;
+}
+#introduct h2{
+	display:inline;
+	color:#B5B4B4;
+	font-size:100%;
+	margin-left:220px;
+	margin-top:-26px;
+	float:left;
+}
+.word1{
+	margin-left: 25px; 
+	margin-right: 25px; 
+	letter-spacing: 1px;  
+	line-height: 1.7em; 
+	text-indent: 40px; 
+	text-align: justify;
+	font-size:14px;
+	color:#615f5f;
+	margin-top:20px;
+}
+.more1{
+	margin-left:365px;
+	margin-top:20px;
+}
+#news{
+	width:546px;
+	height:139px;
+	float:right;
+	margin-top:10px;
+	background:url(../images/img1/002.png) no-repeat;
+	_background:url(../images/img1/002.gif) no-repeat;
+}
+#news h1{ 
+	color:#3F3F3F;
+	font-size:140%;
+	letter-spacing:1px;
+    margin-left:175px;
+	_margin-left:87px;
+	margin-top:17px;
+	float:left;
+}
+#news h2{
+	display:inline;
+	color:#B5B4B4;
+	font-size:100%;
+	margin-left:287px;
+	margin-top:-22px;
+	float:left;
+}
+.more2{
+	margin-left:470px;
+	margin-top:23px;
+	*margin-top:-20px;
+}
+#news ul{
+	clear:both;
+	width:350px;
+	height:68px;
+	margin-left:175px;
+	margin-top:21px;
+}
+#news ul li{
+	width:350px;
+	height:14px;
+	line-height:14px;
+	text-align:left;
+	font-size:14px;
+	margin-bottom:4px;
+	color:#615f5f;
+}
+#news ul li span{
+	*margin-top:-13px;
+	float:right;
+}
+#news ul li a{
+	color:#615f5f;
+	text-decoration:none;
+}
+#news ul li a:hover{
+	color:orange;
+	text-decoration:none;
+}
+#technic{
+	width:546px;
+	height:139px;
+	float:right;
+	margin-top:17px;
+	background:url(../images/img1/003.png) no-repeat;
+}
+#technic h1{ 
+	color:#3F3F3F;
+	font-size:140%;
+	letter-spacing:1px;
+    margin-left:175px;
+	_margin-left:87px;
+	margin-top:17px;
+	float:left;
+}
+#technic h2{
+	display:inline;
+	color:#B5B4B4;
+	font-size:100%;
+	margin-left:287px;
+	margin-top:-22px;
+	float:left;
+}
+.more3{
+	margin-left:470px;
+	margin-top:23px;
+	*margin-top:-20px;
+}
+#technic ul{
+	width:350px;
+	height:68px;
+	margin-left:175px;
+	margin-top:21px;
+}
+#technic ul li{
+	width:350px;
+	height:14px;
+	line-height:14px;
+	text-align:left;
+	font-size:14px;
+	margin-bottom:4px;
+	color:#615f5f;
+}
+#technic ul li span{
+	*margin-top:-13px;
+	float:right;
+}
+#technic ul li a{
+	color:#615f5f;
+	text-decoration:none;
+}
+#technic ul li a:hover{
+	color:orange;
+	text-decoration:none;
+}
+#success{
+	width:1028px;
+	height:272px;
+}
+.pic2{
+	width:1028px;
+	height:58px;
+	background:url(../images/img1/021.jpg) no-repeat;
+}
+#success h1{ 
+	color:#3F3F3F;
+	font-size:140%;
+	letter-spacing:1px;
+    margin-left:54px;
+	margin-top:11px;
+	float:left;
+}
+#success h2{
+	color:#B5B4B4;
+	font-size:100%;
+	margin-left:20px;
+	margin-top:15px;
+	float:left;
+}
+.scroll_div {
+	width:1028px; 
+	height:190px;
+	margin:0 auto; 
+	overflow: hidden; 
+	white-space: nowrap;
+	background:#fff;
+}
+.scroll_div img {
+	width:238px;
+	height:190px;
+	margin-left:15px;
+	border: 0; 
+}
+#scroll_begin, #scroll_end, #scroll_begin ul, #scroll_end ul, #scroll_begin ul li, #scroll_end ul li{
+	display:inline;
+}
+.img1{
+	margin-left:0px;
+}

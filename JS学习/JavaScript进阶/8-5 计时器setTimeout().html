@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8-5 计时器setTimeout()</title>
+<!--
+例子1：当我们打开网页3秒后，在弹出一个提示框，代码如下:
+<script type="text/javascript">
+ setTimeout("alert('Hello!')",3000);
+</script>
+-->
+
+<!--例子2：当按钮start被点击时，setTimeout()调用函数，在5秒后弹出一个提示框。
+<script type="text/javascript">
+  function dianji1(){
+	  var t=setTimeout("alert('傻孩子！')",3000);
+	  }
+</script>
+-->
+
+<!--
+例子3：要创建一个运行于无穷循环中的计数器，我们需要编写一个函数来调用其自身。
+在下面的代码，当按钮被点击后，输入域便从0开始计数。
+<script type="text/javascript">
+ alert("请点击开始!!!");
+ var num=0;
+ function tishi2(){
+	 document.getElementById('text').value=num; 
+	 num=num+1;
+	 setTimeout("tishi2()",1000);
+	 }
+</script>
+-->
+
+<script type="text/javascript">
+ var num=0;
+ function startCount(){
+	 document.getElementById('count').value=num;
+	 num=num+1;
+	 setTimeout("startCount()",1000);
+	 }
+ setTimeout("startCount()",1000);
+</script>
+
+</head>
+
+<body>
+<!--例子2：当按钮start被点击时，setTimeout()调用函数，在5秒后弹出一个提示框。
+<form>
+ <input type="button" value="start" onClick="dianji1()">
+</form>
+-->
+
+<!--
+<form>
+ <input type="text" id="text">
+ <input type="button" value="start！" onClick="tishi2()">
+</form>
+-->
+
+<form>
+ <input type="text" id="count">
+</form>
+</body>
+</html>

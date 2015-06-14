@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5-9 替换内容</title>
+<style>
+    span
+    {
+        color: White;
+        padding: 8px;
+        margin: 5px;
+        float: left;
+    }
+    .green
+    {
+        background-color: Green;
+    }
+    .red
+    {
+        background-color: Red;
+    }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>使用each()方法遍历元素</h3>
+    <span class="green">香蕉</span>
+    <span class="green">桃子</span>
+    <span class="green">葡萄</span>
+    <span class="green">荔枝</span>
+    <script type="text/javascript">
+        $("span").each(function (index) {
+            if (index == 1) {
+                $(this).attr("class", "red");
+            }
+        });
+    </script>
+</body>
+</html>

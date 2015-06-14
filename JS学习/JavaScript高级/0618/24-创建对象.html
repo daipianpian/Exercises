@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>24-创建对象</title>
+	<script type="text/javascript">
+      //②构造函数 创建对象
+      /*
+        在javascript里面可以通过一个“函数”创建具体对象，通过new关键字即可
+        这个创建对象的函数称为“构造函数”，这个函数在创建对象的同时会自动
+        执行
+      */
+      function Animal(){
+      	this.color = "yellow";
+      	this.age = 3;
+      	this.run = function(){
+      		console.log('在跑步');
+      	}
+      }
+      var dog = new Animal();
+      var cat = new Animal();
+      /*
+        构造函数创建对象的步骤
+        ① 创建this关键字，this指向null
+        ② 创建dog变量
+        ③ 把this关键字指向dog
+        ④ 为this丰富成员变量信息，也就是为dog丰富成员
+      */
+      console.log(dog);//Animal { color="yellow", age=3, run=function()}
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>24-创建对象</title>
+  <script type="text/javascript">
+    function Animal(){
+      this.color = "yellow";
+      this.age = 3;
+      this.run = function(){
+        console.log('在跑步');
+      }
+    }
+    
+    var dog = new Animal();
+    var cat = new Animal();
+      
+    console.log(dog);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

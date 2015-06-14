@@ -1,0 +1,255 @@
+#header{
+	position:relative;
+	width:1000px;
+	height:138px;
+	background:url(../images/imagestwo/header2.jpg) no-repeat;
+}
+#contents{
+	width:1000px;
+	height:960px;
+	margin-top:-2px;
+	background:#FDFDFC url(../images/imagestwo/background3.png) no-repeat top;
+}
+#sidebarleft{
+	width:203px;
+	height:955px;
+	margin-left:56px;
+	position:absolute;
+	background:url(../images/imagestwo/09.png);
+}
+.sidebartop{
+	width:119px;
+	height:103px;
+	position:absolute;
+	margin-top:20px;
+	margin-left:43px;
+}
+.sidebartop li{
+	width:119px;
+	height:29px;
+	color:#fffefc;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	line-height:29px;
+	text-align:center;
+	margin-bottom:8px;
+	background:url(../images/imagestwo/32.jpg);
+}
+.sidebartop li a{
+	color:#fffefc;
+	text-decoration:none;
+}
+.sidebartop li a:hover{
+	margin-top:4px;
+	margin-left:4px;
+	color:#fffefc;
+}
+.sidebarmiddle{
+	width:70px;
+	height:114px;
+	color:#426d01;
+	position:absolute;
+	margin-left:62px;
+	margin-top:146px;
+}
+#sidebarleft h1{
+	width:70px;
+	height:16px;
+	text-align:center;
+	line-height:16px;
+	color:#426d01;
+	font-size:16px;
+	margin-top:1px;
+	margin-bottom:17px;
+}
+.sidebarmiddle li{
+	width:60px;
+	height:15px;
+	color:#426d01;
+	line-height:15px;
+	text-align:center;
+	font-size:13px;
+	margin-bottom:12px;
+	padding-left:13px;
+	background:url(../images/imagesone/05.png) no-repeat left;
+}
+.sidebarmiddle li a{
+	color:#426d01;
+	text-decoration:none;
+}
+.sidebarmiddle li a:hover{
+	color:#fffefc;
+}
+.sidebarfooter{
+	width:70px;
+	height:114px;
+	color:#426d01;
+	position:absolute;
+	margin-left:62px;
+	margin-top:320px;
+}
+.sidebarfooter li{
+	width:60px;
+	height:15px;
+	line-height:15px;
+	text-align:center;
+	font-size:13px;
+	margin-bottom:12px;
+	padding-left:13px;
+	background:url(../images/imagesone/05.png) no-repeat left;
+}
+.sidebarfooter li a{
+	color:#426d01;
+	text-decoration:none;
+}
+.sidebarfooter li a:hover{
+	color:#fffefc;
+}
+#sidebarright{
+	width:661px;
+	height:932px;
+	*position:absolute;
+	margin-left:269px;
+	margin-top:2px;
+}
+.srh{
+	width:661px;
+	height:215px;
+	background:url(../images/imagestwo/srhbg.jpg);
+}
+.hot{
+	width:661px;
+	height:22px;
+	margin-top:9px;
+	background:url(../images/imagestwo/19.jpg) no-repeat left top;
+}
+.hotcp{
+	width:649px;
+	height:22px;
+	margin-left:12px;
+	background:url(../images/imagestwo/cpline.jpg) no-repeat bottom right;
+}
+.hotcp li{
+	color:#10110c;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	list-style:none;
+	margin-left:7px;
+	padding-top:2px;
+}
+.tiaozhuan1{
+	width:285px;
+	*width:290px;
+	width:296px !important;
+	height:26px;
+	margin-left:365px;
+}
+.tiaozhuan1 li{
+	height:26px;
+	float:left;
+}
+.tiaozhuan1 input{
+	width:23px;
+	height:12px;
+	line-height:12px;
+	color:#7e7e7c;
+	font-size:12px;
+	text-align:center;
+	margin-top:10px;
+	background:#F6F6F6;
+}
+.tiaozhuan1 input.text{
+	width:22px;
+	height:12px;
+	margin-top:9px;
+	text-align:center;
+}
+.gong,.ye{
+	font-size:13px;
+	margin-top:12px;
+}
+.go{
+	color:#7e7e7c;
+	font-size:20px;
+	margin-top:5px;
+}
+.go a{
+	color:#7e7e7c;
+}
+.go a:hover{
+	color:#7e7e7c;
+}
+.cpimages{
+	width:661px;
+	height:652px;
+	background:pink;
+}
+#hotimg{
+	width:661px;
+	height:163px;
+}
+#hotimg ul{
+	width:661px;
+	height:128px;
+	list-style-type:none;
+}
+
+#hotimg ul li{
+	width:208px;
+	height:128px;
+	margin-left:18px;
+	float:left;
+	list-style-type:none;
+}
+#hotimg ul li.hotimg1{
+	margin-left:0px;
+}
+#hotwd ul{
+	width:661px;
+	height:31px;
+	list-style-type:none;
+}
+
+#hotwd ul li{
+	width:208px;
+	height:31px;
+	margin-left:18px;
+	text-align:center;
+	line-height:31px;
+	float:left;
+	list-style-type:none;
+}
+#hotwd ul li.hotwd1{
+	margin-left:0px;
+}
+.tiaozhuan2{
+	width:285px;
+	*width:290px;
+	width:296px !important;
+	height:26px;
+	margin-left:365px;
+	_margin-top:-8px;
+}
+.tiaozhuan2 li{
+	height:26px;
+	float:left;
+}
+.tiaozhuan2 input{
+	width:23px;
+	height:12px;
+	line-height:12px;
+	color:#7e7e7c;
+	font-size:12px;
+	text-align:center;
+	margin-top:10px;
+	_margin-top:10px;
+	background:#F6F6F6;
+}
+.tiaozhuan2 input.text{
+	width:22px;
+	height:12px;
+	margin-top:9px;
+	text-align:center;
+}
+

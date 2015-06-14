@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>24-正则-特别字符组成</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+        // ( ): 标记一个子表达式的开始和结束位置。
+        //① 提高表达式优先级
+        //   var s = 12+20*6
+        //   var s = (12+20)*6
+
+        var reg = /(go)+gle/; //表示go单元重复出现1或任意次数
+        var str = "google";  //nook
+        var str = "gogle";
+        var str = "gogogogogogogle";
+
+        //② 可以在众多内容里边筛选子级内容
+        //   抓取()模式单元内容
+        var reg = /<a href='.*' target='(.*)'>(.*)<\/a>/;
+        var str = "<a href='http://www.weather.com.cn/weather/101010100.shtml' target='_blank'>28℃/19℃</a>";
+
+        var rst = str.match(reg);
+        //console.log(rst[1]);  //_blank
+        //console.log(rst[2]);  //28℃/19℃
+
+        console.log(rst);
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>24-正则-特别字符组成</title>
+    <script type="text/javascript">
+    var reg = /(go)+gle/;
+    var str = "google";
+    var str = "gogle";
+    var str = "gogogogogogogogogle";
+
+    var reg = /<a href='.*' target='(.*)'>(.*)<\/a>/;
+    var str = "<a href='http://www.weather.com.cn/weather/101010100.shtml' target='_blank'>28℃/19℃</a>";
+
+    var srt = str.match(reg);
+    console.log(srt);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9-1 表单验证插件——validate</title>
+<style>
+    #divtest{width: 282px;}
+    #divtest .title{padding: 8px;background-color: red;color: #fff;height: 23px;line-height: 23px;font-size: 15px;font-weight: bold;}
+    #divtest .content{padding: 8px 0px;background-color: #fff;font-size: 13px;}
+    #divtest .content .tip{color: red;font-size: 12px;}
+    .fl{float: left;}
+    .fr{float: right;}
+</style>
+<script src="jquery-1.8.2.js"></script>
+<script src="js-9-1 表单验证插件-validate/jquery.validate.js"></script>
+<script src="js-9-1 表单验证插件-validate/jquery.validate.messages_cn.js"></script>
+</head>
+
+<body>
+    <form id="frmV" method="get" action="#">
+    <div id="divtest">
+        <div class="title">
+            <span class="fl">表单验证插件</span> 
+            <span class="fr">
+                <input id="btnSubmit" type="submit" value="提交" />
+            </span>
+        </div>
+        <div class="content">
+            <span class="fl">邮箱：</span><br />
+            <input id="email" name="email" type="text" /><br />
+            <span class="tip"></span>
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+        $(function () {
+            $("#frmV").validate(
+              {
+                  /*自定义验证规则*/
+                  rules: {
+                      email:{
+                        required:true,
+                        email:true,
+                      }
+                  },
+                  /*错误提示位置*/
+                  errorPlacement: function (error, element) {
+                      error.appendTo(".tip");
+                  }
+              }
+            );
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02-弹出当前项目信息</title>
+
+      <style type="text/css">
+        li{cursor: pointer;}
+      </style>
+
+	<script type="text/javascript">
+      window.onload = function(){
+      	lis = document.getElementsByTagName('li');
+
+            //闭包实现(匿名函数自运行实现闭包效果)
+      	for(var i=0; i<lis.length; i++){
+      		lis[i].onclick = (function(n){
+                    return function(){
+                        alert(lis[n].innerHTML);
+                    }
+                  })(i);
+      	}
+      }
+      //clk是一个新的变量名称，是全局的，这个名字容易被其他的同名变量“污染”
+      /*
+       function clk(n){
+         function ff(){
+            alert(lis[n].innerHTML);
+         }
+         return ff;
+       }
+      */
+	</script>
+</head>
+<body>
+	<ul>
+		<li>曹操</li>
+		<li>刘备</li>
+		<li>吕布</li>
+		<li>貂蝉</li>
+	</ul>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>02-弹出当前项目信息</title>
+  <script type="text/javascript">
+     window.onload = function(){
+      lis = document.getElementsByTagName('li');
+
+      for(var i=0; i<lis.length; i++){
+        lis[i].onclick = (function(n){
+          return function(){
+            alert(lis[n].innerHTML);
+          }
+        })(i);
+      }
+     }
+  </script>
+</head>
+<body>
+  <ul>
+    <li>曹操</li>
+    <li>刘备</li>
+    <li>吕布</li>
+    <li>貂蝉</li>
+  </ul>
+</body>
+</html>

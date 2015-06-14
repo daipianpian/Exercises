@@ -1,0 +1,127 @@
+img { 
+     border: 0px; 
+}
+#content
+{
+	width:1000px;
+	height:810px;
+	background:#fff;
+}
+#bannerkuang{
+	width:1000px;
+	height:240px;
+	margin-top:15px;
+}
+#banner
+{ 
+     margin: 0px auto 0px auto; 
+	 padding: 0px; 
+	 width: 962px; 
+	 height: 207px;
+	 background:#999999;  
+}
+.slides
+{ 
+     margin: 0px auto; 
+	 width: 962px; 
+	 height: 207px; 
+	 overflow: hidden; 
+	 position: relative; 
+}
+.slide-pic
+{    margin: 0px;
+     padding: 0px; 
+	 width: 962px; 
+	 overflow: hidden; 
+	 list-style: none;
+	 background:url(../images/img4/banner2.gif); 
+}
+.slide-pic img
+{    width: 962px; 
+     height: 197px; 
+}
+.slide-pic li
+{    display: none; 
+}
+.slide-pic li.cur
+{ 
+     display: block; 
+}
+.slide-li
+{ 
+	 margin: 0px; 
+	 padding: 0px; 
+	 left: 0px; 
+	 bottom: 0px; 
+	 position: absolute; 
+}
+.slide-li li
+{    margin: 0px; 
+     padding: 0px; 
+	 width: 320.6px; 
+	 height: 10px; 
+	 float: left; 
+	 overflow: hidden; 
+	 list-style: none;
+}
+.slide-li a
+{    width: 320.6px; 
+     height: 10px; 
+	 color: #000; 
+	 font-size: 12px; 
+	 display: block; 
+}
+.slide-li a:hover
+{    color: #F00; 
+     text-decoration: none; 
+}
+.op li
+{    background: #999999; 
+     filter: alpha(opacity=60); 
+	 opacity: 0.6; 
+}
+.op li.cur { 
+     background: #666666; }
+.slide-txt span { 
+     display: none; 
+}
+#zhong{
+	width:1000px;
+	height:589px;
+	background:url(../images/img4/zhong-bg.jpg);
+}
+#zhongcon{
+	width:962px;
+	height:589px;;
+	margin-left:19px;
+}
+.leftpic{
+	width:181px;
+	height:120px;
+	float:left;
+	margin-top:-20px;
+	_margin-top:0px;
+	background:url(../images/img4/contact.png);
+	_background:url(../images/img4/contact.gif);
+}
+#word{
+	position:absolute;
+	*position:relative;
+	width:562px;
+	height:250px;
+	color:#8b8b8b;
+	margin-left:90px;
+	margin-top:130px;
+	font-weight:bold;
+	font-family:"Courier New", Courier, monospace;
+}
+#word ul li{
+	font-size:25px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	margin-bottom:23px;
+}
+#word ul li span{
+	font-size:20px;
+}

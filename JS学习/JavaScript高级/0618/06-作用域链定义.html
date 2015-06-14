@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>06-作用域链定义</title>
+	<script type="text/javascript">
+      //变量在当前、内部、深层环境都会起作用
+      //变量的作用域是变量声明时候就决定的，而不是运行时
+      var age=23;
+      function f1(){
+      	console.log("f1:"+age);
+      }
+
+      function f2(){
+      	var age=29;
+      	f1();
+      }
+      f2(); //f1:23(√)   f1:29(×)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

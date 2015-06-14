@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6-7 调用trigger()方法手动触发指定的事件</title>
+<style>
+    div
+    {
+        width: 160px;
+        border: solid 1px #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .color{
+        color: Orange;
+    }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>trigger()手动触发事件</h3>
+    <div>土豪，咱们交个朋友吧</div>
+    <script type="text/javascript">
+      $(function(){
+        $("div").bind("change-color",function(){
+            $(this).addClass("color");
+        });
+        $("div").trigger("change-color");
+      });
+    </script>
+</body>
+</html>

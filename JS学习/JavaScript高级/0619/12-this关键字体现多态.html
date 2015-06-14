@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>12-this关键字体现多态</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+
+        var name = "kitty";
+        var age = 10;
+
+        function Cat(){
+            console.log(this.name+"--"+this.age);
+        }
+        Cat();//kitty--10
+
+        var bosi = {name:'波斯猫',age:13,color:'black'};
+        //给bosi对象增加成员方法，让其指向上边的Cat函数
+        bosi.express = Cat;
+        bosi.express();//波斯猫--13
+
+        function Wolf(){
+            this.name = "sevenwolf";
+            this.age = 19;
+            this.eye = "闪闪发光";
+        }
+        var seven = new Wolf;
+        seven.say = Cat;
+        seven.say();//sevenwolf--19
+
+        var pig = {name:'花猪',age:1.5,hobby:'sleep'};
+        Cat.call(pig);//花猪--1.5
+
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>12-this关键字体现多态</title>
+    <script type="text/javascript">
+    var name = "kitty";
+    var age = 10;
+
+    function Cat(){
+        console.log(this.name+"--"+this.age);
+    }
+    Cat();
+
+    var bosi = {name:'波斯猫',age:13,color:'black'};
+
+    bosi.express = Cat;
+    bosi.express();
+
+    function Wolf(){
+        this.name = "sevenwolf";
+        this.age = 10;
+        this.eye = "闪闪发光";
+    }
+    var seven = new Wolf;
+    seven.say = Cat;
+    seven.say();
+
+    var pig = {name:'花猪',age:2,hobby:'sleep'};
+    Cat.call(pig);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

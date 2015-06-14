@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="jquery-1.8.2.js"></script>
+<title>挑战题</title>
+<style type="text/css">
+    .info strong{color:#fff; padding:4px; background-color:#0099CC;}
+.info p{ text-indent:2em;}
+</style>
+</head>
+<body>
+    <ul>
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+        <li>004</li>
+        <li>005</li>
+        <li>006</li>
+        <li>007</li>
+    </ul>
+    <a  href="javascript:;">更多</a>
+    <script>
+        $(function(){
+            $("li:eq(3)").css("display","none");
+            $("li:eq(4)").css("display","none");
+            $("a").click(function(){
+                if($("a").text() === "更多"){
+                    $("a").text("简化");
+                    $("li:eq(3)").css("display","block");
+                    $("li:eq(4)").css("display","block");
+                }else{
+                    $("a").text("更多");
+                    $("li:eq(3)").css("display","none");
+                    $("li:eq(4)").css("display","none");                    
+                }
+            });
+        })
+    </script>
+
+
+    <div class="info">
+    <h4>活动介绍</h4>
+    <botton value="显示"></botton>
+    <hr><p></p>
+    <p id="infomain">
+      <h4><strong>孵</strong>海尔超前孵化器介绍</h4>
+      <p>
+        海尔超前孵化器属于海尔集团690旗下 ，秉承着海尔鼓励创新、人人创客的文化理念和海尔智慧生活的产品理念是一个以项目/创意为主体 ，配以专项基金及上下游资源系统的虚拟孵化生态圈 ，我们将其定名为 RAW GARDEN ，名字很直观地体现了孵化器关注领域的垂直性和资源聚合的平台性  ， 而GARDENER则是海尔演的角色 。RAW GARDEN 关注项目主要聚焦在白色家电 、新能源、新技术、智能硬件及相关延伸产业等方向的早期产品。海尔超前孵化器属于海尔集团690旗下 ，秉承着海尔鼓励创新、人人创客的文化理念和海尔智慧生活的产品理念是一个以项目/创意为主体 ，配以专项基金及上下游资源系统的虚拟孵化生态圈 ，我们将其定名为 RAW GARDEN ，名字很直观地体现了孵化器关注领域的垂直性和资源聚合的平台性  ， 而GARDENER则是海尔演的角色 。RAW GARDEN 关注项目主要聚焦在白色家电 、新能源、新技术、智能硬件及相关延伸产业等方向的早期产品海尔超前孵化器属于海尔集团690旗下 ，秉承着海尔鼓励创新、人人创客的文化理念和海尔智慧生活的产品理念是一个以项目/创意为主体 ，配以专项基金及上下游资源系统的虚拟孵化生态圈 ，我们将其定名为 RAW GARDEN ，名字很直观地体现了孵化器关注领域的垂直性和资源聚合的平台性  ， 而GARDENER则是海尔演的角色 。RAW GARDEN 关注项目主要聚焦在白色家电 、新能源、新技术、智能硬件及相关延伸产业等方向的早期产品。
+      </p>
+      <br />
+      
+    </p>
+  </div>
+  <script>
+        $(function(){
+            $("#infomain").css("display","none");
+            $("a").click(function(){
+                if($("a").text() === "更多"){
+                    $("a").text("简化");
+                    $("li:eq(3)").css("display","block");
+                    $("li:eq(4)").css("display","block");
+                }else{
+                    $("a").text("更多");
+                    $("li:eq(3)").css("display","none");
+                    $("li:eq(4)").css("display","none");                    
+                }
+            });
+        })
+    </script>
+</body>
+</html>

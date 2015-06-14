@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>14-异常</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+
+        var name = "tom";
+        var age  = 25;
+        
+        try{
+            //以下语句代码如果出现异常情况
+            //相关的错误信息会被catch捕捉
+            //可以通过catch里边的ex获得具体错误信息
+            console.log(name);
+            console.log(age);
+
+            console.log(addr);  //使用一个未定义变量 ReferenceError
+            
+            var student = new Array(-10);  //RangeError  Invalid array length
+
+            var num = new 20();  //TypeError  number is not a function
+
+            var dog = new eval();  //TypeError  function eval() { [native code] } is not a constructor
+
+        }catch(ex){//控制器是Exception
+            //捕捉异常错误信息
+            console.log(ex);
+        }
+
+        console.log('every thing is ok');
+        
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>19-正则-定义字符组成</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+        //正则表达式--定义字符组成
+
+        var reg = /[0-9]/;   //匹配0-9之间任何一个数字
+        var reg = /[6-9]/;   //匹配6-9之间任何一个数字
+        //以下7-3的表达有错误，应该写成3-7,从小往大写
+        //var reg = /[7-3]/;   //匹配3-7之间任何一个数字
+        var str = "2014-6-19";
+
+        var reg = /[a-z]/;  //匹配26个字母任何一个["c"]
+        var reg = /[A-Z]/;  //匹配26个大写字母任何一个["M"]
+        var reg = /[d-h]/;  //匹配defgh字母任何一个["e"]
+        var reg = /[tsowq]/;  //匹配tsowq字母任何一个["o"]
+        //以下应该设置为[a-f]
+        //var reg = /[f-a]/;  
+        var reg = /[a-zA-Z]/; //全部大小写字母匹配任何一个["c"]
+        var reg = /[a-zA-Z0-9]/; //全部大小写字母匹配任何一个["2"]
+        var str = "2014coMpUter";
+
+        //具体匹配
+        //被匹配目标内容.match(正则);
+        var rst = str.match(reg);
+        console.log(rst);
+        
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>19-正则-定义字符组成</title>
+    <script type="text/javascript">
+    var reg = /[0-9]/;
+    var reg = /[6-9]/;
+
+    var str = "2014-6-19";
+
+    var reg = /[a-z]/;
+    var reg = /[A-Z]/;
+    var reg = /[d-h]/;
+    var reg = /[tsowq]/;
+
+    var reg = /[a-zA-Z]/;
+    var reg = /[a-zA-Z0-9]/;
+    var str = "2014coMpUter";
+
+    var rst = str.match(reg);
+    console.log(rst);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>20-正则-特别字符组成</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+        //*  : 其前面那个单元出现0次或以上（任意次数）
+        var reg = /go*gle/; //* 表示匹配前边的o的次数可以是0或任意次数
+        var str = "google";
+        var str = "ggle";
+        var str = "gogle";
+        var str = "gooooooooooooooooooooooooooooooooooooooooooooooooooooooogle";
+
+        //+  : 其前面那个单元出现1次或以上
+        var reg = "201+4";
+        var str = "2014-6-19";
+        var str = "20111111111111111114-6-19";
+        var str = "204-6-19"; //nook
+
+        //?  : 其前面那个单元出现0次或1次
+        var reg = "he?llo";
+        var str = "hello";
+        var str = "hllo";
+        var str = "heeeello";  //nook
+
+        var rst = str.match(reg);
+        console.log(rst);
+
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>20-正则-特别字符组成</title>
+    <script type="text/javascript">
+    var reg = /go*gle/;
+    var str = "google";
+    var str = "ggle";
+    var str = "gogle";
+    var str = "goooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogle";
+
+    var reg = "201+4";
+    var str = "2014-6-19";
+    var str = "20111111111111111111111114-6-19";
+    var str = "204-6-19";
+
+    var reg = "he?llo";
+    var str = "hello";
+    var str = "hllo";
+    var str = "heeeello";
+
+
+    var rst = str.match(reg);
+    console.log(rst);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

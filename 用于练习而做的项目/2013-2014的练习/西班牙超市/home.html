@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>supermarket</title>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<a href="js/scripts.js"></a><a href="js/jquery.nivo.slider.js"></a><a href="js/jquery-1.6.4.min.js"></a>
+<a href="js/custom.js"></a><a href="js/cufon-yui.js"></a><a href="js/jquery.js"></a>
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/index.css"/>
+</head>
+<body>
+<script type="text/javascript">
+$(function(){
+	var moveHeight = 226,
+		moveTime = 200,
+		curMove = null;
+	$('.caselist li').hover(function (e){
+		var curLi = $(this);
+		curMove = setTimeout(function (){
+			curLi.children('a.tagImg1').animate({ top: '-' + moveHeight + 'px' }, moveTime);
+			curLi.children('div.tagDiv1').animate({ top: '0px' }, moveTime);
+		}, 200);
+	},function(e){
+		clearTimeout(curMove);
+		$(this).children('a.tagImg1').animate({ top: '0px' }, moveTime);
+		$(this).children('div.tagDiv1').animate({ top: moveHeight + 'px' }, moveTime);
+	});
+});
+</script>
+<div id="head">
+    <div id="famal">
+        <h1 class="logol"><a href="#"><img src="images/logol.png" /></a></h1>
+            <ul class="about">
+             <li class="news"><a href="contactUs.html">关于西班牙</a></li>
+              <li class="news"><a href="message.html">联系我们</a></li>
+             <li class="new"><a href="http://favorite.taobao.com/collect_list.htm?spm=a1z0k.1000783.0.0.TJA2fk&itemtype=0">加入收藏</a></li>
+            </ul>
+    <div id="nav">
+        <ul>
+        <li class="life"><a href="home.html">省心生活</a></li>
+        <li class="life"><a href="sale.html">商品卖场</a></li>
+          <li class="live">
+            <dl>
+              <dt><a href="about.html">关于我们</a></dt>
+                <dd><a href="contactUs.html">联系我们</a></dd>
+                <dd><a href="message.html">留言反馈</a></dd>
+            </dl>
+          </li>
+        </ul>
+    </div>
+        <ul class="ww">
+             <li class="weix"><a href="https://mp.weixin.qq.com/"><img src="images/tt1.png" /></a><p class="xx"><a href="https://mp.weixin.qq.com/">西班牙官方微信</a></p></li>
+                <li class="weib"><a href="http://weibo.com/"><img src="images/tt3.png" /></a><p class="pp"><a href="http://weibo.com/">加关注</a></p></li>
+        </ul>
+      <form class="form"><input class="input" value="请输入商品名称" alt="搜索" /><span class="sourch"><a href="search-results.html">搜索</a></span></form>
+     </div>
+   </div>
+   <div id="tatol">
+        <div class="clear" id="slider-bg">
+            <div class="full-width-wrapper" id="slider-frame">
+                <div class="fixed-width-wrapper maxx-theme" id="slider-wrapper">
+                    <div id="slider" class="nivoSlider">
+                    <a href="http://www.lanrentuku.com/" target="_blank"><img src="images/01.jpg" alt="懒人图库"></a>
+                    <a href="http://www.lanrentuku.com/" target="_blank"><img src="images/02.jpg" alt="懒人图库"></a>
+                    <a href="http://www.lanrentuku.com/" target="_blank"><img src="images/03.jpg" alt="懒人图库"></a>
+                    <a href="http://www.lanrentuku.com/" target="_blank"><img src="images/04.jpg" alt="懒人图库"></a>
+                    <a href="http://www.lanrentuku.com/" target="_blank"><img src="images/05.jpg" alt="懒人图库"></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="ban"></div>
+    <div id="banner"></div>
+<!--<div id="in-nav">
+    <dl class="nav">
+       <dd class="shopping"><img src="images/contant7.gif" /></dd>
+         <dt class="shop"><a href="#">西班牙会员</a></dt>
+    </dl>
+        <dl class="nav">
+           <dd class="shopping"><img src="images/contant1.gif" /></dd>
+             <dt class="shop"><a href="#">卖场查询</a></dt>
+        </dl>
+            <dl class="nav">
+               <dd class="shopping"><img src="images/contant5.gif" /></dd>
+                 <dt class="shop"><a href="#">线上购物</a></dt>
+            </dl>
+                <dl class="nav">
+                   <dd class="shoppings"><img src="images/conatnt6.gif" /></dd>
+                     <dt class="shops"><a href="#">F&F</a></dt>
+                </dl>
+            <dl class="nav">
+                <dd class="shoppings"><img src="images/contant4.gif" /></dd>
+                  <dt class="shops"><a href="#">最新活动</a></dt>
+                </dl>
+        <dl class="nav">
+           <dd class="shoppings"><img src="images/contact3.gif" /></dd>
+              <dt class="shops"><a href="#">购物车</a></dt>
+        </dl>
+    <dl class="nav">
+      <dd class="shoppings"><img src="images/contanct2.gif" /></dd>
+        <dt class="shops"><a href="#">客服电话</a></dt>
+    </dl>
+ </div>-->
+ <div id="show_one">
+     <h1 class="h1">热销产品</h1>
+       <h2 class="h2"></h2>
+<ul class="caselist">
+	<li>
+		<a href="#" class="tagImg1" target="_blank"><img src="images/show02.jpg" alt="全聚德" /></a>
+		<div class="tagDiv1">
+			<a href="#" class="tagImg2" target="_blank"><img src="images/show02.jpg" alt="全聚德" /></a>
+			<h3>全聚德</h3>
+			<p class="tagP1">类型：西班牙超市</p>
+			<p class="tagP2">全聚德通过网站很好的宣传了企业品牌。利用图片展示菜系，,方便客户提前了解菜谱和用餐环境。</p>
+			<p class="tagP3"><a href="#l" target="_blank">查看该产品</a><a href="#" target="_blank">点击收藏</a></p>
+		</div>
+	</li>
+	<li>
+		<a target="_blank" class="tagImg1" href="#"><img alt="深圳市佳思特企业管理咨询有限公司" src="images/show04.jpg"></a>
+		<div class="tagDiv1">
+			<a target="_blank" class="tagImg2" href="#"><img alt="深圳市佳思特企业管理咨询有限公司" src="images/show04.jpg"></a>
+			<h3>佳思特</h3>
+			<p class="tagP1">类型：西班牙超市</p>
+			<p class="tagP2">全聚德通过网站很好的宣传了企业品牌。利用图片展示菜系，,方便客户提前了解菜谱和用餐环境。</p>
+			<p class="tagP3"><a target="_blank" href="#">查看该产品</a><a target="_blank" href="#">点击收藏</a></p>
+		</div>
+	</li>
+	<li>
+		<a target="_blank" class="tagImg1" href="#"><img alt="深圳市佳思特企业管理咨询有限公司" src="images/show05.jpg"></a>
+		<div class="tagDiv1">
+			<a target="_blank" class="tagImg2" href="#"><img alt="深圳市佳思特企业管理咨询有限公司" src="images/show05.jpg"></a>
+			<h3>佳思特</h3>
+			<p class="tagP1">类型：西班牙超市</p>
+			<p class="tagP2">全聚德通过网站很好的宣传了企业品牌。利用图片展示菜系，,方便客户提前了解菜谱和用餐环境。</p>
+			<p class="tagP3"><a target="_blank" href="#">查看该产品</a><a target="_blank" href="#">点击收藏</a></p>
+		</div>
+	</li>
+	<li>
+		<a href="#" class="tagImg1" target="_blank"><img src="images/show03.png" alt="全聚德" /></a>
+		<div class="tagDiv1">
+			<a href="#" class="tagImg2" target="_blank"><img src="images/show03.png" alt="全聚德" /></a>
+			<h3>全聚德</h3>
+			<p class="tagP1">类型：西班牙超市</p>
+			<p class="tagP2">全聚德通过网站很好的宣传了企业品牌。利用图片展示菜系，,方便客户提前了解菜谱和用餐环境。</p>
+			<p class="tagP3"><a href="#l" target="_blank">查看该产品</a><a href="#" target="_blank">点击收藏</a></p>
+		</div>
+	</li>
+</ul>
+</div>
+<div id="show_two">
+  <h1 class="hh">超市风貌</h1>
+    <h2 class="ht"></h2>
+      <p class="one"><a href="###"><img src="images/show12.jpg" /></a></p>
+        <ul class="two">
+          <li class="three"><a href="#"><img src="images/show2.jpg"/></a></li>
+            <li class="three"><a href="#"><img src="images/show0.jpg" /></a></li>
+               <li class="three"><a href="#"><img src="images/show8.jpg" /></a></li>
+            <li class="three"><a href="#"><img src="images/show4.jpg" /></a></li>
+        </ul>
+  <ul class="four">
+    <li class="five"><a href="#"><img src="images/show1.jpg" /><img src="images/show9.jpg" /></a></li>
+      <li class="three"><a href="#"><img src="images/show6.jpg" /></a></li>
+        <li class="three"><a href="#"><img src="images/show7.jpg" /></a></li>
+   </ul>
+
+   </div>
+</div>
+ <div id="foot">
+        <ul class="help">
+           <li class="center"> <a href="about.html">公司简介</a></li>
+             <li class="center"> <a href="http://about.texutong.com/hr.htm">诚征人才</a></li>
+              <li class="center"> <a href="http://www.875.cn/index01.html?sid=2100&campaignid=74527&adgroupid=116441&keywordid=431965">百货招商</a></li>
+            <li class="center"> <a href="http://favorite.taobao.com/collect_list.htm?spm=a1z0k.1000783.0.0.TJA2fk&itemtype=0">帮助中心</a></li>
+        </ul>
+ </div>
+        <div id="footer">
+           <p class="yh">版权所有：CopyRight&nbsp;(c)&nbsp;西班牙超市：2012-2013.Aright Reserved</p>
+              <p class="eh">豫ICP备12006213号  技术支持：<span class="span">励志工作室</span></p>
+        </div>
+
+
+</body>
+</html>

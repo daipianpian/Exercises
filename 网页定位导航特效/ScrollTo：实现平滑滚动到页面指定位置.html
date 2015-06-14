@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title>ScrollTo：实现平滑滚动到页面指定位置</title>
+	<style type="text/css">
+	    *{margin: 0 auto; padding: 0;}
+	    ul,li{list-style: none;}
+		.nav{width:500px;margin:20px auto; position: fixed; background: #ccc;}   
+		.nav li{float:left; width:100px; height:24px; line-height:24px}   
+		.box{height:500px}   
+		.box h3{height:32px; line-height:32px; padding-left:20px; font-size:14px}   
+		#pro,#ser{background:skyblue;}   
+		#news,#con{background:lightgreen;}  
+	</style>
+</head>
+<body>
+	<ul class="nav">   
+	   <li><a href="#" class="nav_pro">产品展示</a></li>   
+	   <li><a href="#" class="nav_news">新闻中心</a></li>   
+	   <li><a href="#" class="nav_ser">服务支持</a></li>   
+	   <li><a href="#" class="nav_con">联系我们</a></li>   
+	   <li><a href="#" class="nav_job">人才招聘</a></li>   
+	</ul>   
+	
+	<div id="pro" class="box">   
+	   <h3>产品展示</h3>   
+	</div>   
+	<div id="news" class="box">   
+	   <h3>新闻中心</h3>   
+	</div>   
+	<div id="ser" class="box">   
+	   <h3>服务支持1</h3>  
+	   <h3>服务支持2</h3> 
+	   <h3>服务支持3</h3> 
+	   <h3>服务支持4</h3> 
+	   <h3>服务支持5</h3> 
+	   <h3>服务支持6</h3> 
+	   <h3>服务支持7</h3> 
+	   <h3>服务支持8</h3> 
+	   <h3>服务支持9</h3> 
+	   <h3>服务支持10</h3> 
+	   <h3>服务支持11</h3> 
+	</div>   
+	<div id="con" class="box">   
+	   <h3>联系我们</h3>   
+	</div>   
+	<div id="job" class="box">   
+	   <h3>人才招聘</h3>   
+	</div> 
+
+	<script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery.scrollTo.js"></script> 
+    <script type="text/javascript">
+	$(function(){   
+	    $(".nav_pro").click(function(){   
+	        $.scrollTo('#pro',500);   
+	    });   
+	    $(".nav_news").click(function(){   
+	        $.scrollTo('#news',800);   
+	    });   
+	    $(".nav_ser").click(function(){   
+	        $.scrollTo('#ser>h3:eq(8)',1000);   
+	    });   
+	    $(".nav_con").click(function(){   
+	        $.scrollTo('#con',1200);   
+	    });   
+	    $(".nav_job").click(function(){   
+	        $.scrollTo('#job',1500);   
+	    });   
+	}); 
+    </script>	
+</body>
+</html>

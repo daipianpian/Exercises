@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>15-闭包-计数器</title>
+	<script type="text/javascript">
+      //①传统计数器
+      var num=0;
+      function add_num(){
+      	return ++num;
+      }
+      console.log(add_num()); //1
+      console.log(add_num()); //2
+      console.log(add_num()); //3
+      console.log(add_num()); //4
+      //函数销毁就不能调用
+      //当前计数器不好的地方是计数基数容易被污染，导致计数错误
+      num=100;
+      console.log(add_num()); //101
+
+      //
+      
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>15-闭包-计数器</title>
+      <script type="text/javascript">
+        var num=0;
+        function add_num(){
+            return ++num;
+        }
+        console.log(add_num());
+        console.log(add_num());
+        console.log(add_num());
+        console.log(add_num());
+
+        num=100;
+        console.log(add_num());
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

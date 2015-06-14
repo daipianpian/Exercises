@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+#banner{width:1000px;
+        height:253px;
+		margin-top:5px;
+        background:url(../images/4f378bfbc6180.jpg) no-repeat;
+	    }
+#content{width:1000px;
+         height:800px;
+		 margin-top:-18px;
+		 *margin-top:0px;
+		 line-height:15px;
+		 }
+#content li{text-align:left;
+            margin-top:3px; }
+#content p{line-height:20px;
+           text-align:left; }
+#content h1{text-align:left;
+            color:#034997;
+			font-size:15px;
+			margin-top:5px;}			 
+/*#content OL{width:800px;
+            float:left;
+	OL LI { MARGIN: 8px }*/
+	#con { FONT-SIZE: 12px;
+	        WIDTH: 800px;
+			HEIGTH:800PX;
+			FLOAT:LEFT;
+			MARGIN-LEFT:10PX;
+			MARGIN-TOP:5PX;
+			}
+	#tags {PADDING-RIGHT:0px; 
+	       PADDING-LEFT:0px; 
+		   PADDING-BOTTOM:0px; 
+/*		   MARGIN:0px 0px 0px 10px; 
+*/		   WIDTH: 400px; 
+		   HEIGHT: 30px }
+	#tags LI {BACKGROUND:#034997;
+	          FLOAT:left;
+	          MARGIN-RIGHT: 1px; 
+			  LIST-STYLE-TYPE: none; 
+			  HEIGHT: 30px }
+	#tags LI A { PADDING-RIGHT: 10px; 
+	            PADDING-LEFT: 10px; 
+				BACKGROUND: url(images/tagright.gif) no-repeat right bottom; 
+				FLOAT: left; 
+				PADDING-BOTTOM: 0px; 
+				COLOR: #FFF; 
+				LINE-HEIGHT: 30px; 
+				HEIGHT: 30px; 
+				TEXT-DECORATION: none }
+	#tags LI.emptyTag {BACKGROUND: none transparent scroll repeat 0% 0%; 
+	                   WIDTH: 4px}
+	#tags LI.selectTag { BACKGROUND-POSITION: left center; 
+	                   MARGIN-BOTTOM:-2px;
+						  POSITION: relative; 
+						  HEIGHT: 25px }
+	#tags LI.selectTag A {BACKGROUND-POSITION: right top; 
+	                      COLOR: #000;
+						  font-weight:bold; 
+						  LINE-HEIGHT: 25px;                            
+						  HEIGHT: 25px }
+	#tagContent {BORDER-RIGHT:#aecbd4 1px solid; 
+	             PADDING-RIGHT:1px; 
+				 BORDER-TOP:#aecbd4 1px solid; 
+				 PADDING-LEFT:1px; 
+				 PADDING-BOTTOM: 1px; 
+				 BORDER-LEFT: #aecbd4 1px solid; 
+				 PADDING-TOP: 1px; 
+				 BORDER-BOTTOM: #aecbd4 1px solid; 
+				 BACKGROUND-COLOR:#fff }
+	.tagContent {PADDING-RIGHT: 10px; 
+	             DISPLAY: none; 
+				 PADDING-LEFT: 10px; 
+				 PADDING-BOTTOM:0px; 
+				 WIDTH: 576px; 
+				 COLOR:#333; 
+				 PADDING-TOP: 10px; 
+				 HEIGHT:600px;
+				 WIDTH:778PX;
+				 BORDER:1PX #333 solid; }
+#tagContent DIV.selectTag{DISPLAY: block }
+#tagContent p{ text-indent:2em;}
+#tagContent p li{ text-align:left;}
+ 
+ 
+ #right {float:right;
+         width:100px;
+		 height:135px;
+		 margin-top:33px;}
+ #right ul li{width:23px;
+              height:135px;
+			  margin-right:2px;
+			  padding-top:10px;
+			  float:left;}
+ #right ul li a{color:#333;
+                font-size:14px;
+				font-weight:bold;
+				}
+#right ul li a:hover{color:#0000FF;}						
+.z{ background:url(../images/jianjie/lianxiwomen.jpg);
+	padding-left:5px;}		 
+.x{ background:url(../images/jianjie/liuyan.jpg);
+   padding-left:5px;
+  }		 
+		 
+		 
+		 	 
+/*往下的是foot部分：*/
+		#foot{ height:20px;
+			  background:url(../images/foot.jpg);
+		      }
+		.help{
+			height:20px;
+			width:500px;
+		}
+		.center{
+			height:15px;
+			margin-top:2px;
+			text-align:center;
+			float:left;
+			width:70px;
+			padding:0 15px;
+			margin-left:10px;
+			border-right:1px solid #eee;
+			}
+			.center a{
+				color:#fff;
+				text-decoration:none;
+			}
+			.center a:hover{
+				text-decoration:underline;
+				color:#FC0;
+			}		 
+#footer{height:60px;
+		background:#fff;
+		}
+		.yh{
+			line-height:30px;
+			margin-left:20px;
+		}
+		.eh{line-height:15px;}
+		.span{color:#F69;}

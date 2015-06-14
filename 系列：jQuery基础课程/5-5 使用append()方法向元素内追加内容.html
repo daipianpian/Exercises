@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5-4 移除属性和样式</title>
+<style>
+	div
+	{
+	    margin: 10px 0px;
+	}
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>append()方法追加内容</h3>
+    <script type="text/javascript">
+        function rethtml() {
+            var $html = "<div id='test' title='hi'>我是调用函数创建的</div>"           
+            return $html;
+        }
+        $("body").append(rethtml());
+    </script>
+</body>
+</html>

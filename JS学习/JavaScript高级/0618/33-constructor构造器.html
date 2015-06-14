@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>33-constructor构造器</title>
+	<script type="text/javascript">
+      //构造器
+
+      function Animal(){
+      	this.color = "yellow";
+      }
+      var dog = new Animal();
+      console.log(dog.constructor);//Animal()
+
+      //获得一个对象
+      var cat={addr:'北京',age:4};
+
+      console.log(cat.constructor);//Object()
+
+      //函数也是对象，通过constructior也可以获得函数的构造器(Function)
+      function f1(name,color,addr){
+      	console.log(name+"--"+color+"--"+addr);
+      }
+      f1('tom','white','newwork');
+      console.log(f1.constructor);//Function()
+
+      //var 函数名字 = new Function(参数1，参数2，参数3，。。。参数n，函数代码体);
+      var f2 = new Function('name','color','addr',"console.log(name+'--'+color+'--'+addr)");
+      f2('jack','pink','beijing');
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>33-constructor构造器</title>
+      <script type="text/javascript">
+        function Animal(){
+            this.color = "yellow";
+        }
+
+        var dog = new Animal();
+        console.log(dog.constructor);
+
+        function f1(name,color,addr){
+            console.log(name+"--"+color+"--"+addr);
+        }
+
+        f1('tom','white','beijing');
+        console.log(f1.constructor);
+
+        var f2 = new Function('name','color','addr',"console.log(name+'--'+color+'--'+addr)");
+
+        f2('jack','pink','shanghai');
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

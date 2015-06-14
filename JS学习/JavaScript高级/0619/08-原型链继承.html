@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08-原型链继承</title>
+	<script type="text/javascript">
+      function Cat(){
+      	this.weapon = "伶牙俐齿";
+      }
+      var kitty = new Cat;
+
+      function Tiger(){
+      	this.act = "猛虎扑食";
+      }
+      Tiger.prototype = kitty;
+      var north = new Tiger;
+
+      function Wolf(){
+      	this.color = "gray";
+      }
+      Wolf.prototype = north;
+      var seven = new Wolf;
+
+      function Dog(){
+      	this.leg = 4;
+      }
+      Dog.prototype = seven;
+      var smallblack = new Dog;
+
+      console.log(smallblack);
+      //console.log(smallblack.weapon);
+
+      /*
+        对象访问属性
+        ① 在对本对象自己成员里边寻找
+        ② 如果没有，就去构造函数寻找
+        ③ 如果再没有，就去原型对象的构造函数里边寻找
+        ④ 如果再没有，就去原型对象的构造函数的原型对象的成员身上寻找。。
+        实际，对象寻找成员就是在原型对象成员和构造函数内部递归寻找。
+        对象寻找成员要在对象成员和构造函数内部
+        不断向上寻找，知道找到顶端对象“Object”位置
+        整个寻找是在对个函数彼此继承的链条形状的代码里边寻找
+        我们把这个多个函数彼此集成的关系称为“原型链”，对象的属性需要在
+        这个链条的内部不断向上寻找
+      */
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>08-原型链继承</title>
+  <script type="text/javascript">
+  function Cat(){
+    this.weapon = "伶牙俐齿";
+  }
+  var kitty = new Cat;
+
+  function Tiger(){
+    this.act = "猛虎扑食";
+  }
+  Tiger.prototype = kitty;
+  var north = new Tiger;
+
+  function Wolf(){
+    this.color = "gray";
+  }
+  Wolf.prototype = north;
+  var seven = new Wolf;
+
+  function Dog(){
+    this.leg = 4;
+  }
+  Dog.prototype = seven;
+   
+  var smallblack = new Dog;
+
+  // console.log(smallblack);
+  console.log(smallblack.weapon);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

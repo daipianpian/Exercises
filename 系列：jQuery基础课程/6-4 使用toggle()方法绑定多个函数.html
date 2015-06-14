@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6-4 使用toggle()方法绑定多个函数</title>
+<style>
+div
+{
+    width: 160px;
+    border: solid 1px #ccc;
+    padding: 8px;
+    text-align: center;
+}
+.color
+{
+    color: Orange;
+}
+.backcolor
+{
+    background-color: Orange;
+    color: White;
+}
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>toggle()方法绑定多个函数</h3>
+    <input id="btntest" type="button" value="点一下我" />
+    <div>我是动态显示的</div>
+    <script type="text/javascript">
+       $(function(){
+        $("#btntest").bind("click",function(){
+            $("div").toggle();
+        })
+       });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6-6 使用one()方法绑定元素的一次性事件</title>
+<style>
+    div
+    {
+        width: 180px;
+        border: solid 1px #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>one()方法执行一次绑定事件</h3>
+    <div>请点击我一下</div>
+    <script type="text/javascript">
+      $(function(){
+        var intI=0;
+        $("div").one("click",function(){
+            intI++;
+            $(this).css("font-size",intI+"px");
+        })
+      });
+    </script>
+</body>
+</html>

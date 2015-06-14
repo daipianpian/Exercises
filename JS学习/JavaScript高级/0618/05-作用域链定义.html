@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>05-作用域链定义</title>
+
+	<script type="text/javascript">
+      	//变量在当前、内部、深层环境都会起作用
+            //变量必须“先声明、后使用”
+            var name="tom";
+            function f1(){
+                  f2();           //使用  //undefined
+                  var addr="北京";//声明
+                  //f2函数的“声明”位置与“调用”没有先后顺序关系
+                  //函数有预加载步骤，代码会被第一个放到内存
+                  function f2(){
+                        console.log("f2:"+name+"--"+addr);
+                  }
+            }
+            f1();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

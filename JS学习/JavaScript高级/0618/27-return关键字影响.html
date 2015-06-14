@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>27-return关键字影响</title>
+	<script type="text/javascript">
+        //return关键字影响
+        //return对构造函数创建对象没有影响
+        //该关键字后边的代码不给执行而已
+        function Animal(ad,ag){
+            this.addr = ad;
+            this.age = ag;
+            this.color = "black";
+
+            return "tiger";
+
+            this.run = function(){
+                  console.log('走直线');
+            }
+        }
+        //var rst = Animal('china',9); //tiger字符串
+        var cat = new Animal('波斯湾',7); //Animal { addr="波斯湾" ,age=7, color="black"}
+        console.log(cat);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

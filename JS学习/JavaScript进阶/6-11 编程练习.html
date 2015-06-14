@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6-11 编程练习</title>
+<script type="text/javascript">
+  function count(){
+	  t1=document.getElementById("txt1").value;
+	  t2=document.getElementById("txt2").value;
+	  s1=document.getElementById("select").value;
+	  var t3="";
+	  switch(s1){
+		  case "+":
+		  t3=parseInt(t1)+parseInt(t2);
+		  break;
+		  case "-":
+		  t3=parseInt(t1)-parseInt(t2);
+		  break;
+		  case "*":
+		  t3=parseInt(t1)*parseInt(t2);
+		  break;
+		  case "/":
+		  t3=parseInt(t1)/parseInt(t2);
+		  break;
+		  }
+	  document.getElementById("fruit").value=t3;
+	  }
+</script>
+</head>
+
+<body>
+<input type="text" id="txt1">
+<select id="select">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select> 
+<input type="text" id="txt2">
+<input type="button" value='=' onClick="count()">
+<input type="text" id="fruit">
+</body>
+</html>

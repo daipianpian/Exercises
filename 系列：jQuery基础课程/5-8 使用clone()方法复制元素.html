@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5-8 使用clone()方法复制元素</title>
+<style>
+    span
+    {
+        color: White;
+        padding: 8px
+    }
+    .red
+    {
+        background-color: Red;
+    }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+    <h3>使用clone()方法复制元素</h3>
+    <span class="red" title="hi">我是美猴王</span>
+    <script type="text/javascript">
+        var $html = "<span class='red' title='hi'>我是美猴王</span>";
+        $("body").append($(".red").clone());
+    </script>
+</body>
+</html>

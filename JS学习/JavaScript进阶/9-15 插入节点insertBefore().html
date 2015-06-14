@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9-15 插入节点insertBefore()</title>
+</head>
+
+<body>
+<ul id="test"><li>JavaScript</li><li>HTML</li></ul> 
+ 
+<script type="text/javascript">
+
+  var otest = document.getElementById("test");  
+  var newnode = document.createElement("li");
+  newnode.innerHTML = "PHP";  
+  otest.insertBefore(newnode,otest.childNodes[1]); 
+</script> 
+</body>
+</html>

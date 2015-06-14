@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3-4 :has(selector)过滤选择器</title>
+<style>
+ol { float: left; width: 180px; }
+ol li { float: left; width: 180px; height: 23px; line-height: 23px; margin: 2px 0px; }
+p { padding: 0px; margin: 0px; }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+<body>
+<div>改变包含"label"元素的背景色：</div>
+<ol>
+  <li>
+    <p>我是P先生</p>
+  </li>
+  <li>
+    <label>L妹纸就是我</label>
+  </li>
+  <li>
+    <p>我也是P先生</p>
+  </li>
+  <li>
+    <label>我也是L妹纸哦</label>
+  </li>
+  <li>
+    <p>P先生就是我哦</p>
+  </li>
+</ol>
+</body>
+<script type="text/javascript">
+    $("li:has('label')").css("background-color", "blue");
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10-复制继承</title>
+	<script type="text/javascript">
+      //衍生继承---复制继承
+      function Dog(){
+      	this.leg = 4;
+      	this.hobby = "看家护林";
+      	this.tail = '抬头摆尾';
+      }
+      var seven = {eye:'闪闪发光',tail:'笔直的尾巴'};
+
+      Dog.prototype.extend = function(obj){
+      	//把obj对象的属性复制一份给当前的对象this使用
+        for(var k in obj){
+        	//复制过来的成员必须是当前对象没有的
+        	//如果当前对象没有这个属性就复制
+        	if(!this.hasOwnProperty(k)){
+        		this[k] = obj[k];
+        	}
+        }
+      }
+      var black = new Dog;
+      black.extend(seven); //把seven的相关成员复制给black使用
+      console.log(black);
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>10-复制继承</title>
+  <script type="text/javascript">
+  function Dog(){
+    this.leg = 4;
+    this.hobby = "看家护林";
+    this.tail = "抬头摆尾";
+  }
+
+  var seven = {eye:'闪闪发光',tail:'笔直的尾巴'};
+
+  Dog.prototype.extend = function(obj){
+    for(var k in obj){
+      if(!this.hasOwnProperty(k)){
+        this[k] = obj[k];
+      }
+    }
+  }
+  var black = new Dog;
+  black.extend(seven);
+  console.log(black);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

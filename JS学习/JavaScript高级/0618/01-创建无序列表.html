@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-创建无序列表</title>
+</head>
+<body>
+	<script type="text/javascript">
+      // <ul>
+      //   <li>关羽</li>
+      //   <li>张飞</li>
+      //   <li>赵云</li>
+      //   <li>吕布</li>
+      // </ul>
+
+      window.onload=function(){
+      	var per=['关羽','张飞','赵云','吕布'];
+      	var ull=document.createElement('ul');
+		
+      	for(var i=0;i<per.length;i++){
+      		var lii=document.createElement('li');
+      		var lii_t=document.createTextNode(per[i]);
+
+      		lii.appendChild(lii_t); // 追加
+      		ull.appendChild(lii); //追加
+
+      		//给每个li设置鼠标“移入移出”事件
+      		lii.addEventListener('mouseover',function(){
+      			//this代表当前的li元素节点对象
+      			this.style.backgroundColor="pink";
+      		});
+      		lii.addEventListener('mouseout',function(){
+      			this.style.backgroundColor="";
+      		});
+      	}
+      	document.body.appendChild(ull);
+      }
+	</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>01-创建无序列表</title>
+      <script type="text/javascript">
+        window.onload=function(){
+            var per=['关羽','张飞','赵云','吕布'];
+            var ull=document.createElement('ul');
+
+            for (var i=0; i<per.length; i++){
+                  var lii = document.createElement('li');
+                  var lii_t = document.createTextNode(per[i]);
+
+                  lii.appendChild(lii_t);
+                  ull.appendChild(lii);
+
+                  //给每个li设置鼠标“移入移出”事件
+                  lii.addEventListener("mouseover",function(){
+                       // this 代表当前的li元素节点对象
+                       this.style.backgroundColor = "pink";
+                  });
+                  lii.addEventListener("mouseout",function(){
+                        this.style.backgroundColor = "";
+                  });
+                
+            }
+            document.body.appendChild(ull);
+         }
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

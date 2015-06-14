@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>09-属性属组</title>
+	<script type="text/javascript">
+        function Dog(){
+            this.leg = 4;
+            this.hobby = "看家护林";
+        }
+        var seven = {eye:'闪闪发光',tail:'笔直的尾巴'};
+
+        Dog.prototype = seven;
+
+        var black = new Dog;
+        black.eat = "吃骨头"; //本身自己的成员
+
+        //遍历对象，查看属性的归属for-in
+        for(var k in black){
+            //hasOwnProperty()判断属性属组
+            if(black.hasOwnProperty(k)){
+                console.log(k+'--本身成员');
+            }else {
+                console.log(k+'--原型成员')
+            }
+        }
+        </script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-属性属组</title>
+    <script type="text/javascript">
+    function Dog(){
+        this.leg = 4;
+        this.hobby = "看家护林";
+    }
+    var seven = {eye:'闪闪发光',tail:'笔直的尾巴'};
+
+    Dog.prototype = seven;
+
+    var black = new Dog;
+
+    for(var k in black){
+        if(black.hasOwnProperty(k)){
+            console.log(k+'--本身成员');
+        }
+        else{
+            console.log(k+'--原型成员');
+        }
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

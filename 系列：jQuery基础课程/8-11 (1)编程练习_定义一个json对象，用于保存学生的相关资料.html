@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>8-11 编程练习-挑战题</title>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+<input type="button" value="查询学生信息"/>
+<ul>
+    <li>姓名：成绩</li>
+</ul>
+
+<script>
+    var jsonStu=[
+        {"name":"语文","score":99},
+        {"name":"数学","score":93},
+        {"name":"英语","score":95}
+    ];
+    $("input").bind("click",function(){
+        $.each(jsonStu,function(index,stu){
+            $("ul").append("<li>"+stu.name+":"+stu.score+"</li>");
+            $("input").attr("disabled",true);
+        })
+    });
+</script>
+</body>
+</html>

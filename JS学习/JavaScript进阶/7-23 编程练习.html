@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7-23 编程练习-系好安全带,准备启航</title>
+
+<script type="text/javascript">
+
+  //通过javascript的日期对象来得到当前的日期，并输出。
+  var date=new Date();
+  var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+  document.write(date.getFullYear()+"年"+date.getMonth()+"月"+date.getDate()+"日"+weekday[date.getDay()]+"<br />");
+
+  
+  
+  //成绩是一长窜的字符串不好处理，找规律后分割放到数组里更好操作哦
+  var sorceStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
+ var sn=sorceStr.split(";");
+ //var s1=sn[1].split(":");
+ //document.write(s1[1]+"  ");
+ var sum=0;
+ for (var i=0;i<sn.length;i++){
+     var s1=sn[i].split(":");
+  
+     var s2=parseInt(s1[1]);
+     sum=s2+sum;
+    
+     }
+ document.write(sum+"  ");
+  //从数组中将成绩撮出来，然后求和取整，并输出。
+  
+
+
+</script>
+</head>
+<body>
+</body>
+</html>

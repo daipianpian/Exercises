@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>29-成员对象删除</title>
+	<script type="text/javascript">
+      //对象成员删除
+      function Animal(){
+      	this.color = "black";
+      	this.age = 5;
+      	this.run = function(){
+                  console.log('走直线');
+            }
+      }
+      var cat = new Animal();
+      console.log(cat); //Animal { color="black", age=5, run=function()}
+
+      delete cat.age; //删除指定对象的属性
+
+      console.log(cat); //Animal { color="black", run=function()}
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>29-成员对象删除</title>
+      <script type="text/javascript">
+      function Animal(){
+            this.color = "block";
+            this.age = 5;
+            this.run = function(){
+                  console.log('走直线');
+            }
+      }
+
+      var cat = new Animal();
+      console.log(cat);
+
+      delete cat.age;
+      console.log(cat);
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

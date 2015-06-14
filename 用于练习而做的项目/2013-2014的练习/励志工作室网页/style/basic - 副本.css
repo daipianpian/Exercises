@@ -1,0 +1,125 @@
+*{
+	margin:0 auto;
+	padding:0;
+}
+body{
+	width:1261px;
+	margin:0 auto;
+	background:url(../images/img1/index_bg4.jpg) repeat-x;
+}
+ul{
+	list-style-type:none;
+}
+img{
+	border:none;
+}
+#header{
+	width:1261px;
+	height:120px;
+	background:url(../images/img1/001.jpg);
+}
+#toplink{
+	width:187px;
+	height:13px;
+	margin-left:946px;
+	margin-top:21px;
+	color:#feffff;
+	font-size:12px;
+	font-family:"Courier New", Courier, monospace;
+	letter-spacing:0px;
+	position:absolute;
+}
+#toplink ul{
+	width:187px;
+	height:13px;
+	color:#feffff;
+}
+#toplink ul li{
+	letter-spacing:1px;
+	color:#feffff;
+	float:left;
+}
+
+#toplink a{
+	display:block;
+    color:#feffff;
+	text-align:left;
+    float:left;
+    text-decoration:none;
+}
+#toplink a:hover{
+	color:#feffff;
+	text-decoration:underline;
+}
+#nav{
+	width:550px;
+	height:35px;
+	color:#000;
+	font-size:16px;
+	margin-left:549px;
+	margin-top:57px;
+	position:absolute;
+}
+#nav ul li.shouye{
+	width:64px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	float:left;
+	background:url(../images/img1/002.png);
+	_background:url(../images/img1/002.jpg);
+}
+#nav ul li.shouye a{
+	width:64px;
+	height:35px;
+	text-decoration:none;
+}
+#nav ul li.shouye a:hover{
+	width:64px;
+	height:35px;
+	background:url(../images/img1/004.png);
+	_background:url(../images/img1/004.jpg);
+}
+#nav ul li{
+	width:94px;
+	line-height:35px;
+	text-align:center;
+	float:left;
+	margin-left:2px;
+	background:url(../images/img1/003.png);
+	_background:url(../images/img1/003.jpg);
+}
+#nav ul li a{
+	width:94px;
+	color:#000;
+	display:inline-block;
+	text-decoration:none;
+}
+#nav ul li a:hover{
+	width:94px;
+	color:#ffffff;
+	text-decoration:none;
+	background:url(../images/img1/005.png);
+	_background:url(../images/img1/005.jpg);
+}
+#footer{
+	width:1028px;
+	height:62px;
+	background:url(../images/img1/022.jpg) no-repeat;
+}
+#footer ul{
+	width:1028px;
+	height:32px;
+	padding-top:15px;
+}
+#footer ul li{
+	width:1028px;
+	height:14px;
+	line-height:14px;
+	text-align:center;
+	font-size:14px;
+	color:#827f7f;
+	margin-bottom:12px;
+}
+
+

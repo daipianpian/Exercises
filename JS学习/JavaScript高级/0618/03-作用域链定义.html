@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03-作用域链定义</title>
+
+	<script type="text/javascript">
+      var name="tom";
+      function f1(){
+      	//变量在当前、内部、深层环境都会起作用
+      	var addr="北京";
+      	console.log("f1:"+name+"--"+addr);
+      	function f2(){
+      		//变量在当前和内部、深层环境都会起作用
+      		var height=170;
+      		console.log("f2:"+name+"--"+height+"--"+addr);
+      		function f3(){
+      			console.log("f3:"+name+"--"+addr+"--"+height);
+      		}
+      		f3();
+      	}
+      	f2();
+      }
+      f1();
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>03-作用域链定义</title>
+      <script type="text/javascript">
+      //变量在当前环境、内部、深层环境都会起作用
+        var name = "tom";
+
+        function f1(){
+            var addr = "北京";
+            console.log("f1:"+name+"--"+addr);
+            function f2(){
+                  //变量在当前环境和内部、深层环境都会起作用
+                  var height = "170";
+                  console.log("f2:"+name+"--"+height+"--"+addr);
+                  function f3(){
+                        console.log("f3"+name+"--"+addr+"--"+height);
+                  }
+                  f3();
+            }
+            f2();
+        }
+        f1();
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

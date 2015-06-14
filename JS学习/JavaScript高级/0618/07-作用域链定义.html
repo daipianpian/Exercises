@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07-作用域链定义</title>
+	<script type="text/javascript">
+      //变量在当前、内部、深层环境都会起作用
+
+      var name="cat";
+      function f1(){
+      	var age=5;
+      	function f2(){
+      		var color="yellow";
+                  console.log(name+age+color);  //ok
+      		function f3(){
+      			console.log("f3:"+name+"--"+age+"--"+color);
+      		}
+      		f3();
+      	}
+      	f2();
+      }
+      f1();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

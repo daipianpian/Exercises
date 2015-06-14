@@ -1,0 +1,376 @@
+
+#ban {
+	height:30px;
+	width:1000px;
+	background:#eee;
+}
+#banner{
+	height:100px;
+	width:1000px;
+	background:url(../images/banner110.jpg) no-repeat;
+ }
+.nivoSlider{
+	position:relative;
+	z-index:1
+ }
+.nivoSlider img{
+	background:red;
+	position:absolute;
+	top:0;
+	left:0;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:97.6%;
+	z-index:8;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0;
+}
+.nivo-nextNav {
+	right:0;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+
+
+
+/*
+Custom Nivo Slider Default Theme
+Author:Manh
+*/
+
+.maxx-theme .nivoSlider {
+	position:relative;
+	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
+	height:370px;
+	width:960px;
+	margin:11px auto 0;
+}
+.maxx-theme .nivoSlider img {
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+}
+.maxx-theme .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.maxx-theme .nivo-controlNav,.maxx-theme .nivo-controlNav a,.maxx-theme .nivo-directionNav a{
+	background-image:url(../images/sprite.png);
+	background-repeat:no-repeat
+}
+.maxx-theme .nivo-controlNav {
+	position:absolute;
+	left:50%;
+	bottom:-26px;
+	width:126px;
+	height:42px;
+	background-position:-24px 0;
+    margin-left:-63px; /* Tweak this to center bullets */
+	z-index:10
+}
+
+.maxx-theme .nivo-controlNav a {
+	display:block;
+	width:16px;
+	height:16px;
+	text-indent:-9999px;
+	border:0;
+	margin:12px 3px 0 3px;
+	float:left;
+	background-position:0 0;
+	
+}
+.maxx-theme .nivo-controlNav a:first-child{
+	margin-left:11px;
+}
+.maxx-theme .nivo-controlNav a.active {
+	background-position:-2px -17px
+}
+
+.maxx-theme .nivo-directionNav a {
+	display:block;
+	width:70px;
+	height:30px;
+	text-indent:-9999px;
+	border:0;
+}
+.maxx-theme .nivo-directionNav a.nivo-nextNav {
+	background-position:-161px -29px;
+	right:355px;
+}
+.maxx-theme .nivo-directionNav a.nivo-prevNav {
+	left:355px;
+	background-position:-161px 0;
+}
+
+.maxx-theme .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+	width:460px;
+	padding:5px 10px 10px;
+	right:0;
+	top:228px;
+	text-align:right;
+	min-height:65px;
+}
+.maxx-theme .nivo-caption h1{
+	margin-top:0;
+	margin-bottom:10px;
+}
+.maxx-theme .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.maxx-theme .nivo-caption a:hover {
+    color:#fff;
+}
+#slider-wrapper{
+	position:relative
+}
+
+
+#piece-maker-slider{
+	width:980px;
+	height:370px;
+	margin:0px auto
+}
+  #show_one{
+				height:300px;
+ 				background:url(../images/contant.jpg) no-repeat;
+		    }
+		.h1{
+			    line-height:18px;
+				width:80px;
+				padding:5px;
+				float:left;
+				text-align:left;
+				color:#e02;
+				font-size:18px;
+				font-weight:bold;
+				margin:15px 0 0 30px;
+				_margin:15px 0 0 15px;
+				border-top:2px solid #F39;
+				border-left:2px solid #F39;
+				border-right:2px solid #F39;
+		}
+		.h2{
+			height:28px;
+			width:850px;
+			border-bottom:2px solid #f39;
+			float:left;
+			margin-top:15px;
+		}
+	.caselist {
+	width:1000px;
+	margin-left:20px;
+}
+		.caselist li {
+			width:207px;
+			height:207px;
+			float:left;
+			margin:20px 10px 15px 20px;
+			_margin:10px 20px 7.5px 10px;
+			position:relative;
+			overflow:hidden;
+		}
+			.tagImg1 {
+				width:130px;
+				height:260px;
+				display:block;
+				position:absolute;
+				left:0px;
+				top:0px;
+			}
+			.tagImg1 img {
+				width:207px;
+				height:207px;
+			}
+			.tagImg2 {
+				width:59px;
+				height:59px;
+				display:block;
+				float:left;
+				margin:0 10px 0 0;
+			}
+			.tagImg2 img {
+				width:59px;
+				height:59px;
+			}
+			.tagDiv1 {
+				background:#F4F4F4;
+				border:1px solid #E7E7E7;
+				padding:10px;
+				width:205px;
+				height:205px;
+				position:absolute;
+				left:0px;
+				top:226px;
+				z-index:2;
+			}
+			.tagDiv1 h3 {
+				margin:0px;
+				font-size:12px;
+				color:#000;
+				line-height:16px;
+			}
+			.tagP1 {
+				margin:5px 0 0;
+				color:#666;
+			}
+			.tagP2 {
+				line-height:22px;
+				text-align:left;
+				clear:both;
+				color:#666;
+				padding:5px 0 0;
+				height:90px;
+				overflow:hidden;
+			}
+			.tagP3 {
+				height:25px;
+			}
+			.tagP3 a {
+				background:url("../images/jz_sprite-btn.png") no-repeat;
+				color:#2A5077;
+				display:inline-block;
+				height:25px;
+				line-height:25px;
+				margin-left:10px;
+				text-align:center;
+				width:89px;
+				text-decoration:none;
+			}
+			
+
+    #show_two{
+			height:425px;
+			background:url(../images/contant110.jpg) no-repeat;
+			margin-top:10px;
+			margin-bottom:10px;
+ 		}
+		.hh{
+			line-height:18px;
+			width:80px;
+			padding:5px;
+			float:left;
+			text-align:left;
+			color:#e02;
+			font-size:18px;
+			font-weight:bold;
+			margin:25px 0 0 30px;
+			_margin:25px 0 0 15px;
+			border-top:2px solid #3C0;
+			border-left:2px solid #3C0;
+			border-right:2px solid #3C0;
+		}
+			.ht{
+				height:28px;
+				width:850px;
+				border-bottom:2px solid #3C0;
+				float:left;
+				margin-top:25px;
+			}
+				.one{
+					height:315px;
+					  width:190px;
+					    float:left;
+					  margin:15px 20px 15px 30px;
+				   _margin:7.5px 10px 7.5px 15px
+				}
+				.one img{
+					height:315px;
+					width:190px;
+					display:block;
+				}
+		.two{
+			height:150px;
+			  width:750px;
+			   float:left;
+			  margin:15px 0;
+			_margin:15px 0;
+		}
+		.two img{
+			height:150px;
+			width:170px;
+		}
+		.three{
+			float:left;
+			width:170px;
+			height:150px;
+			margin-right:17px;
+			_margin-right:8.5px;
+		}
+		.five{
+			float:left;
+			width:354px;
+			height:150px;
+			margin-right:17px;
+			_margin-right:8.5px;
+		}
+	
+		.four{
+			height:150px;
+			width:750px;
+			float:left;
+		}
+		.four img{
+			height:150px;
+			width:170px;
+		}

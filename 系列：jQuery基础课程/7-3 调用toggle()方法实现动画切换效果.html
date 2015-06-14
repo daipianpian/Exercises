@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7-3 调用toggle()方法实现动画切换效果</title>
+</style>
+<script src="jquery-1.8.2.js"></script>
+<style type="text/css">
+  div
+  {
+      margin: 10px 0px;
+      border: solid 1px #ccc;
+      width: 280px;
+  }
+  ul
+  {
+      list-style-type: none;
+      padding: 5px;
+      margin: 0px;
+      display: none;
+  }
+  li
+  {
+      margin: 3px;
+  }
+  h4
+  {
+      background-color: #eee;
+      padding: 5px;
+      margin: 0px;
+      height: 23px;
+      line-height: 23px;
+      cursor: pointer;
+  }
+  .fl{
+    float: left;
+  }
+  .fr{
+    float: right;
+  }
+</style>
+</head>
+
+<body>
+    <h3>toggle()方法的动画切换效果</h3>
+    <div>
+    	<h4><span class="fl">我喜欢吃的水果</span> <span class="fr" id="spanTip">显示</span></h4>
+    	<ul>
+    		<li>苹果</li>
+    		<li>柑橘</li>
+    		<li>梨</li>
+    	</ul>
+    	<input id="hidval" type="hidden" value="0" />
+    </div>
+    <script type="text/javascript">
+       $(function(){
+        var $span=$("#spanTip");
+        $("h4").bind("click",function(){
+          $("ul").toggle(600,function(){
+            $span.html()=="隐藏"?$span.html("显示"):$span.html("隐藏");
+          });
+        });
+       });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>13-执行环境可以访问的变量信息</title>
+	<script type="text/javascript">
+      //当变量在当前、内部、深层环境都会起作用
+
+      var name="cat";
+      function f1(){
+      	var age=5;
+      	function f2(){
+      		var color="yellow";
+      		function f3(){
+      			console.log("f3:"+name+"--"+age+"--"+color); //f3:cat--5--yellow
+      		}
+      		f3();
+      	}
+      	function age(){}
+      	f2();
+      }
+      f1();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>11-4 检测对象是否为原始对象</title>
+<style>
+#divtest { width: 282px; }
+#divtest .title { padding: 8px; background-color: Blue; color: #fff; height: 23px; line-height: 23px; font-size: 15px; font-weight: bold; }
+#divtest .content { padding: 8px; background-color: #fff; font-size: 13px; }
+.fl { float: left; }
+.fr { float: right; }
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+<div id="divtest">
+  <div class="title"> <span class="fl">检测对象是否为原始对象</span> </div>
+  <div class="content"></div>
+</div>
+<script type="text/javascript">
+        $(function () {
+            var obj = "null";
+            var strTmp = "您定义了一个：";
+            if ($.isPlainObject(obj)) { //检测是否为原始对象
+                strTmp += "原始对象";
+            }
+            else {
+                strTmp += "非原始对象";
+            }
+            $(".content").html(strTmp);
+        });
+    </script>
+</body>
+</html>

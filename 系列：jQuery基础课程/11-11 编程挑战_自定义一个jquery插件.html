@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>11-11 编程挑战_自定义一个jquery插件</title>
+<style>
+li{-webkit-transition:background-color 1s; -moz-transition:background-color 1s; -o-transition:background-color 1s;}
+</style>
+<script src="jquery-1.8.2.js"></script>
+</head>
+
+<body>
+ <ul>
+     <li>测试文字</li>
+      <li>测试文字</li>
+       <li>测试文字</li>
+        <li>测试文字</li>
+ </ul>
+    <script type="text/javascript">
+        ; (function ($) {
+            $.extend({
+                "focus": function (obj,color) {
+                    $(obj).css("background",color).siblings().css("background","")
+                }
+            });
+        })(jQuery);
+        $(function () {
+            $("ul li").bind("hover", function () {
+                $.focus(this,"skyblue");            
+            });
+        });
+    </script>
+</body>
+</html>

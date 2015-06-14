@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>23-正则-特别字符组成</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+
+        //|  : 指明两项之间的一个选择
+        var reg = /apple|pear|orange|banana/;
+        var str = "tom like grape,jim like bread,aobama like orange";     
+
+        //\  : 这个符号是用来转义的
+        //     把特殊符号的特殊意思给删除掉，只保留字母本身的原意
+        var reg = /link\?en like \$/;
+        var str = "link?en like $";
+
+        var rst = str.match(reg);
+        console.log(rst);
+
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>23-正则-特别字符组成</title>
+    <script type="text/javascript">
+    var reg = /apple|pear|orange|banana/;
+    var str = "tom like grape,jim like bread,aobama like orange";
+
+    var reg = /link\?en like \$/;
+    var str = "link\?en like \$";
+
+    var rst = str.match(reg);
+    console.log(rst);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

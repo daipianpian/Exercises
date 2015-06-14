@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>26-正则-模式修正符</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+        //模式修正符
+        //  var reg = /模式内容/模式修正符;
+
+        //① i 字母大小写不敏感
+        var reg = /[a-z]+/i;
+        var str = "helloWoRld";
+
+        //② g 进行全局匹配
+        //  如果设置g进行全局匹配就没有具体()模式单元了
+        var reg = /[0-9]+/g;
+        //["2014", "6", "19", "17", "06", "30"]
+        var str = "2014-6-19 17:06:30";
+
+        var reg = /[0-9]+(-)/g;//模式单元不给体现
+        //["2014-", "6-", "19-", "20-", "21-"]
+        var str = "2014-6-19-20-21-";
+
+        //③ m 把目标内容当作多行看待,前提要求目标内容有\n换行符号
+        //   window:  \r\n   换行符号
+        //   unix/linux:  \n 换行符号
+        //   apple :  \r     换行符号
+        var reg = /apple$/m;
+        var reg = /^tom/m;
+        var str = "linken like apple\ntom like orange\njack like pear";
+        var rst = str.match(reg);
+        console.log(rst);
+        
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>26-正则-模式修正符</title>
+    <script type="text/javascript">
+    var reg = /[a-z]+/i;
+    var str = "helloWoRld";
+
+    var reg = /[0-9]+/g;
+    var str = "2014-6-19 17:06:30";
+
+    var reg = /[0-9]+(-)/g;
+    var str = "2014-6-19-20-21";
+
+    var reg = /apple$/m;
+    var reg = /^tom/m;
+    var str = "linken like apple\ntom like orange\njack like pear";
+    var rst = str.match(reg);
+    console.log(rst);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

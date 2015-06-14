@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fontCSS-case</title>
+	<link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/fontCSS.css">
+</head>
+<body>
+	<ul class="layout">
+		<li><i class="icon icon-like shadow"></i></li>
+		<li><i class="icon icon-spinner9 spinner"></i></li>
+		<li><i class="icon icon-github github"></i></li>
+	</ul>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script>
+		$(".github").on("click",function(){
+			var $this = $(this);
+			$this.addClass("btn-activated")
+			setTimeout(function(){
+				$this.removeClass("btn-activated")
+			},500)
+		})
+	</script>
+</body>
+</html>

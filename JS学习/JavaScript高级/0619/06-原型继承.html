@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>06-原型继承</title>
+	<script type="text/javascript">
+      //② 原型继承--“构造函数”继承具体对象
+      function Tiger(){
+      	this.color = "black and yellow";
+      	this.leg = 4;
+      	this.act = function(){
+      		console.log('猛虎扑食'); 
+      	}
+      }
+
+      var cat = {eat:function(){console.log('fish')},hobby:'sleep'};
+
+      //Tiger构造函数通过原型方式继承具体对象
+      //通过Tiger实例化出来的对象也会拥有继承对象cat的成员
+      Tiger.prototype = cat;
+
+      var north = new Tiger;
+
+      console.log(north); //color leg act eat hobby
+      north.eat(); //fish
+      console.log(north.hobby); //sleep
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>06-原型继承</title>
+      <script type="text/javascript">
+      function Tiger(){
+            this.color = "black and yellow";
+            this.leg = 4;
+            this.act = function(){
+                  console.log('猛虎扑食'); 
+            }
+      }
+
+      var cat = {eat:function(){console.log('fish')},hobby:'sleep'};
+
+      Tiger.prototype = cat;
+      var north = new Tiger;
+
+      console.log(north);
+      north.eat();
+      console.log(north.hobby);
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

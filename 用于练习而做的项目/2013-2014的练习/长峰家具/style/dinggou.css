@@ -1,0 +1,189 @@
+#header{
+	position:relative;
+	width:1000px;
+	height:138px;
+	background:url(../images/imagestwo/header2.jpg) no-repeat;
+}
+#contents{
+	width:1000px;
+	height:814px;
+	background:url(../images/imasesthree/bg2.jpg) repeat-x;;
+}
+#top{
+	width:1000px;
+	height:318px;
+}
+.top1{
+	width:774px;
+	height:289px;
+	margin-left:113px;
+	background:url(../images/imasesthree/bg3.jpg);
+}
+.top2{
+	width:774px;
+	height:21px;
+	margin-left:113px;
+	margin-top:9px;
+	background:url(../images/imagestwo/19.jpg) no-repeat left;
+}
+.hotcp{
+	width:762px;
+	height:21px;
+	margin-left:12px;
+	background:url(../images/imasesthree/cpline.jpg) no-repeat bottom;
+}
+.hotcp li{
+	color:#10110c;
+	list-style:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin-left:7px;
+	*margin-left:-7px;
+	padding-top:2px;
+}
+#middle{
+	width:1000px;
+	height:498px;
+}
+#zhong{
+	width:774px;
+	height:498px;
+	margin-left:113px;
+	background:url(../images/imasesthree/background2.jpg);
+}
+.zhongtop{
+	width:762px;
+	height:15px;
+	color:#4d7512;
+	font-size:17px;
+	font-family:"Courier New", Courier, monospace;
+	font-weight:bold;
+	margin-left:12px;
+	padding-top:12px;
+}
+.zhongleft{
+	width:415px;
+	height:371px;
+	font-size:14px;
+	position:absolute;
+	margin-left:145px;
+	margin-top:36px;
+}
+.zhongleft form{
+	width:415px;
+	height:371px;
+}
+.zhongleft form p{
+	margin-bottom:10px;
+	padding:2px 0 2px 0;
+}
+.zhongleft form p input.text{
+	width:191px;
+	height:26px;
+	border:1px solid #ccc;
+	background:#F9F9F9;
+}
+.submittp{
+	width:46px;
+	height:23px;
+	margin-left:270px;
+	_margin-left:135px;
+	margin-top:-39px;
+	float:left;
+	cursor:pointer;
+	background:url(../images/imasesthree/liulan.jpg) no-repeat;
+}
+.submittp:hover{
+	background:url(../images/imasesthree/liulan.jpg) no-repeat;
+}
+.zhongleft form textarea.area{
+	width:340px;
+	height:143px;
+	margin-left:70px;
+	margin-top:-34px;
+	background:#F9F9F9;
+	border:1px solid #ccc;
+}
+.person{
+	letter-spacing:3.5px;
+	*letter-spacing:4.95px;
+	_letter-spacing:4.8px;
+}
+.submitcell{
+	width:58px;
+	height:28px;
+	margin-left:135px;
+	_margin-left:65px;
+	margin-top:10px;
+	float:left;
+	background:#fff;
+	cursor:pointer;
+	background:url(../images/imasesthree/tijiao.jpg) no-repeat;
+}
+.submitcell:hover{
+	background:url(../images/imasesthree/tijiao.jpg) no-repeat;
+}
+
+#sidebar{
+	width:70px;
+	height:302px;
+	position:absolute;
+	margin-left:670px;
+	margin-top:53px;
+}
+#sidebar h1{
+	width:70px;
+	height:16px;
+	text-align:center;
+	line-height:16px;
+	color:#426d01;
+	font-size:16px;
+	margin-top:1px;
+	margin-bottom:17px;
+}
+.sidebarmiddle{
+    width:70px;
+	height:129px;
+	color:#426d01;
+}
+.sidebarmiddle li{
+	width:60px;
+	height:15px;
+	color:#426d01;
+	line-height:15px;
+	text-align:center;
+	font-size:13px;
+	margin-bottom:12px;
+	padding-left:13px;
+	background:url(../images/imagesone/05.png) no-repeat left;
+}
+.sidebarmiddle li a{
+	color:#426d01;
+	text-decoration:none;
+}
+.sidebarmiddle li a:hover{
+	color:#fffefc;
+}
+.sidebarfooter{
+	width:70px;
+	height:129px;
+	color:#426d01;
+	margin-top:57px;
+}
+.sidebarfooter li{
+	width:60px;
+	height:15px;
+	line-height:15px;
+	text-align:center;
+	font-size:13px;
+	margin-bottom:12px;
+	padding-left:13px;
+	background:url(../images/imagesone/05.png) no-repeat left;
+}
+.sidebarfooter li a{
+	color:#426d01;
+	text-decoration:none;
+}
+.sidebarfooter li a:hover{
+	color:#fffefc;
+}

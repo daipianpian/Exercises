@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>19-闭包-当前行高亮显示</title>
+	<script type="text/javascript">
+      window.onload=function(){
+      	//无序列表 高亮显示鼠标当前行
+      	var lis = document.getElementsByTagName('li');
+
+      	//lis.length = 4;
+
+      	for(var i=0; i<lis.length; i++){
+      		//lis[i] 代表当前的li元素节点
+      		lis[i].onmouseover = function(){
+      			//当前内部环境访问外部环境的变量i
+      			//实际外部环环境的变量i等于4
+      			//console.log(i);
+      			lis[i].style.backgroundColor = "gray";
+      		}
+
+      		lis[i].onmouseout = function(){
+      			lis[i].style.backgroundColor = "";
+      		}
+      	}
+      }
+	</script>
+</head>
+<body>
+	<ul>
+		<li>关羽</li>
+		<li>张飞</li>
+		<li>黄忠</li>
+		<li>魏延</li>
+	</ul>
+</body>
+</html>

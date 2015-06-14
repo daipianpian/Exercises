@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>14-闭包</title>
+	 <script type="text/javascript">
+       //简单闭包
+       //以下f1函数，只要执行完毕，name和addr变量就被销毁了
+       function f1(){
+       	var name="tom";
+       	var addr="beijing";
+       	function f2(){
+       		console.log(AO.name+"--"+AO.addr);
+       	}
+       	return f2;
+       }
+
+       //ff是f2函数的引用，因此调用ff函数的效果与调用f2函数效果一致
+       var ff = f1();
+
+       //name和addr由于f1函数执行完毕，会被销毁
+       //ff()函数执行后也可以访问到name和addr的信息
+       //原因：name和addr在
+
+       //name和addr由于f1函数声明好之后，已经“固定”为f2执行环境内部AO的属性了
+       //和外部环境的变量没有直接交互关系。
+
+       //name和addr由于f1函数执行完毕，本身的作用域链被销毁
+       //但是f2函数内部的AO并没有被销毁，还有ff来指引它
+
+       ff(); //tom--beijing
+	 </script>
+</head>
+<body>
+	
+</body>
+</html>

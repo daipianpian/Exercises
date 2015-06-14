@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8-8 返回前一个浏览的页面~8-9 返回下一个浏览的页面</title>
+<script type="text/javascript">
+<!--返回前一个浏览的页面--> 
+ function GoBack(){
+	 window.history.back();
+	 }
+	 
+<!--返回下一个浏览的页面-->
+ function GoForward(){
+	 window.history.forward();
+	 }
+</script>
+</head>
+
+<body>
+<br />
+<a href="#target1">第一个锚点</a>
+<a name="target1"></a>
+<br /><br />
+
+<a href="#target2">第二个锚点</a>
+<a name="target2"></a>
+
+<br /><br />
+使用下面的按钮，实现返回前一个页面：
+<form>
+ <input type="button" value="返回前一个页面" onClick="GoBack()" />
+ <input type="button" value="返回下一个页面" onClick="GoForward()" />
+</form>
+</body>
+</html>

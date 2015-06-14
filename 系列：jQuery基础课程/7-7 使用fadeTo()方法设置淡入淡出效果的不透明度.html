@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7-7 使用fadeTo()方法设置淡入淡出效果的不透明度</title>
+</style>
+<script src="jquery-1.8.2.js"></script>
+<style type="text/css">
+  span{
+    width: 70px;
+    height: 70px;
+    float: left;
+    border: 1px solid #ccc;
+    margin: 0px 8px;
+  }
+  .pink{
+    background-color: pink;
+  }
+  .orange{
+    background-color: orange;
+  }
+  .skyblue{
+    background-color: skyblue;
+  }
+</style>
+</head>
+
+<body>
+    <h3>使用fadeTo()方法设置淡入淡出效果的不透明度</h3>
+    <span class="pink"></span>
+    <span class="orange"></span>
+    <span class="skyblue"></span>
+    <script type="text/javascript">
+       $(function(){
+        $("span").each(function(index){
+          switch(index){
+            case 0:
+            $(this).fadeTo(1500,0.2);
+            break;
+            case 1:
+            $(this).fadeTo(1500,0.4);
+            break;
+            case 2:
+            $(this).fadeTo(1500,0.6);
+            break;
+          }
+        });
+       });
+    </script>
+</body>
+</html>

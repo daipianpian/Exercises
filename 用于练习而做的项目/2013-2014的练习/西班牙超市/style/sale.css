@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contant{
+	width:1000px;
+}
+
+
+a:hover {
+	color:#1974A1;
+	text-decoration:underline;
+}
+
+ 
+.left {
+	position:relative;
+	z-index:1;
+ 	background:#F1F1F1;
+	height:480px;
+	width:200px;
+	float:left;
+	display:block;
+	border:1px solid #ccf;
+}
+.left .mainCate {
+	position:relative;
+	padding:7px 12px;
+	zoom:1;
+ }
+.left .evenLeval {
+	background:#fff;
+ 	height:60px;
+}
+.left h3 {
+	height:25px;
+	line-height:25px;
+	font-size:16px;
+	overflow:hidden;
+}
+.left h3 span {
+	width:18px;
+	height:10px;
+	line-height:25px;
+	font-weight:200;
+	font-size:12px;
+	float:right;
+ }
+.left p {
+	height:20px;
+	line-height:20px;
+ 	text-align:left;
+}
+.left p a {
+	margin-right:10px;
+	color:#666;
+}
+.left .subCate {
+	display:none;
+	background:url(images/nav_div_bg.jpg) 0 0 repeat-y #fff;
+	position:absolute;
+	left:200px;
+	top:0;
+	width:300px;
+	padding:0 0 20px 0px;
+	color:#333;
+   }
+.left .subCate h4 {
+	height:25px;
+	line-height:25px;
+	margin:0 0 10px 0;
+	border-bottom:1px solid #ccc;
+	font-size:16px;
+	color:#333;
+	 background:#F1F1F1;
+ 
+}
+.left .subCate ul {
+	border:1px solid #ccc;
+	width:300px;
+	float:left;
+	overflow:hidden;
+ 	height:90px;
+    }
+.left .subCate li {
+	width:300px;
+	float:left;
+	display:inline;
+    	
+}
+.left .subCate li a {
+	display:block;
+	float:left;
+	padding:0 5px;
+	line-height:25px;
+	color:#666;
+	word-break:keep-all;
+	white-space:nowrap;
+}
+.left .subCate #sub-ul-1 {
+ 	width:100%;
+  }
+.left .on {
+	background:#88766E;
+	color:#fff;
+}
+.left .on h3 a,#nav .on p a {
+	color:#fff;
+}
+.left .on .subCate {
+	display:block !important;
+}
+#mainCate-4 .subCate {
+	top:-100px
+}
+#mainCate-5 .subCate {
+	top:-164px;
+}
+#mainCate-6 .subCate {
+	top:auto;
+	bottom:0;
+ }
+
+ 		 #bn {
+	   height: 247px;
+	   position: relative;
+ 	      overflow: hidden;
+        width:780px;
+	   float:left;
+	   margin-left:10px;
+ 	   borer:1px solid #ccc;
+	    }
+ #bn .tu {
+ 	display: block;
+	float:left;
+	margin-right:0;
+ 	margin-left:0;
+	width:780px;
+	height:247px;
+}
+#bn .tu img{ position:absolute;left:0px;}
+  		 .right_two{
+ 			 float:left;
+			 width:780px;
+			 margin-left:10px;
+			 margin-top:5px;
+		 }
+		 .right_two img{
+			 height:170px;
+			 width:180px;
+ 		 }
+		 .banner{
+			 height:30px;
+			 line-height:30px;
+			 width:770px;
+ 			 float:left;
+			 padding-left:10px;
+ 			 text-align:left;
+			 margin-top:20px;
+			 _margin-top:10px;
+			 margin-left:10px;
+ 			 margin-bottom:5px;
+			 _ margin-bottom:5px;
+ 			 border-bottom:3px solid #09F;
+			 color:#f09;
+				 font-size:25px;
+ 			 }
+ 		 .picture{
+			 float:left;
+			 height:170px;
+			 width:180px;
+			 margin-right:17px;
+			 border:1px solid #eee;
+ 		 }
+		 	 .pic{
+			 float:left;
+			 height:170px;
+			 width:180px;
+			 _margin-right:0px;
+			 border:1px solid #eee;
+ 		 }
+		 .sub{
+			 height:120px;
+			 width:993px;
+			 background:url(../images/i.jpg) no-repeat;
+			 float:left;
+ 			 margin-top:10px;
+		 }
+ 		 
+	.fruit{
+		  width:963px;
+		float:left;
+		margin-top:10px;
+		background:#eee;
+ 	}
+		.pop{
+			height:100px;
+			width:990px;
+			float:left;
+			background:url(../images/pop.jpg) no-repeat;
+		}
+		.guide_one{
+			height:25px;
+    			width:977px;
+			padding-top:15px;
+			padding-left:10px;
+ 			float:left;
+			font-size:22px;
+			color:#060;
+			font-weight:bold;
+			text-align:left;
+ 			border-bottom:1px solid #060;
+		}
+		.guide_two{
+			height:25px;
+  			width:977px;
+			padding-top:15px;
+			padding-left:10px;
+ 			float:left;
+			font-weight:bold;
+			font-size:22px;
+			color:#f09;
+			text-align:left;
+ 			border-bottom:1px solid #f09;
+		}
+		
+	.cloth{
+		height:360px;
+		width:1000px;
+		float:left;
+  	}
+ 	.clothes{
+		height:150px;
+		width:180px;
+ 		float:left;
+		margin-right:18px;
+  		margin-top:20px;
+		_margin-top:20px;
+		border:1px solid #ccc;
+  	}
+	
+	.clothes dt{
+		height:100px;
+		width:170px;
+ 		float:left;
+		margin-bottom:10px;
+		_margin-bottom:5px;
+ 	}
+	.clothes img{
+		height:100px;
+		width:180px;
+	}
+	.clothes dd{
+		height:40px;
+		width:160px;
+		padding-left:10px;
+ 		float:left;
+ 		text-align:left;
+ 	}
+	.clothes dd a{
+		color:#F36;}
+	.clothes dd a:hover{
+			text-decoration:underline;color:#333;
+		}
+		
+		

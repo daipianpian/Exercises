@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>30-函数执行方式</title>
+	<script type="text/javascript">
+      //call()和apply()对函数进行调用
+      var addr = "china";
+      var age = 9;
+      function getInfo(){
+      	//this通俗意义：谁调用这个函数，this就代表谁
+      	console.log(this.addr+"--"+this.age);
+      }
+      getInfo(); //china--9
+
+      var cat = {name:'kitty',addr:'波斯湾',age:10};
+      cat.express = getInfo; //使用一个“函数”给对象赋值，那么这个对象的成员也是一个方法
+
+      //程序代码由于非常多，不小心，相同的名称在不同的地方都有使用
+      //代码出现了变量污染的问题
+      cat.express = "I am kitty,I come from 波斯湾";
+      cat.express();//访问错误，变量express已经被污染
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>30-函数执行方式</title>
+      <script type="text/javascript">
+        var addr = "china";
+        var age = 6;
+
+        function getInfo(){
+            console.log(this.addr+"--"+this.age);
+        }
+
+        getInfo();
+
+        // var cat = {name:'kitty',addr:'波斯湾',age:10};
+
+        // cat.express = getInfo(); 
+        // console.log(cat);
+
+        // cat.express = "I am kitty,I come from 波斯湾";
+
+        // cat.express();
+       
+        var cat = {name:'kitty',addr:'波斯湾',age:10};
+        getInfo(cat);
+        console.log(cat);
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

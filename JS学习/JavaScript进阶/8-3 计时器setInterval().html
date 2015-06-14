@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8-3 计时器setInterval()</title>
+<script type="text/javascript">
+  var attime;
+  function clock(){
+    var time=new Date();          
+    attime=time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+    document.getElementById("clock").value = attime;
+  }
+  var int=setInterval(clock,1000);
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="clock" size="50"  />
+</form>
+</body>
+</html>

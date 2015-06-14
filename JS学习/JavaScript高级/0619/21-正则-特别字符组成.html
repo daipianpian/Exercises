@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>21-正则-特别字符组成</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+
+        //^  : 表示字符串的开始位置
+        //$  : 匹配输入字符串的结尾位置。
+        //一般90%以上的正则都需要使用^和$符号，这样他们把我们的全部目标内容都给匹配
+        //而不是只匹配一部分
+
+        var reg = /^[0-9]+$/;//要求目标内容的开始和结束都是数字内容
+
+        var str = "tom13243257965";   //nook
+        var str = "13243257965itcast"; //nook
+        var str = "13243257965";    //is ok
+
+        var reg = /fish$/;
+        var str = "kitty like fish,dog like gutou";
+
+        var rst = str.match(reg);
+        console.log(rst);
+
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>21-正则-特别字符组成</title>
+    <script type="text/javascript">
+    var reg = /^[0-9]+$/;
+
+    var str = "tom13243257965";
+    var str = "13243257965itcast";
+    var str = "13243257965";
+
+    var reg = /fish$/;
+    var str = "kitty like fish,dog like gutou";
+
+    var rst = str.match(reg);
+    console.log(rst);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

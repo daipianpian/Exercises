@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>04-自定义静态成员</title>
+	<script type="text/javascript">
+    //自定义静态成员
+    function Animal(){
+    	this.name = "七匹狼";
+    	this.color = "gray";
+    }
+    //函数本身是对象，我们可以给对象增加额外成员
+    //这个额外成员就可以理解为“静态成员”
+    Animal.addr = "north";
+    Animal.eye = function(){
+    	console.log('晚上闪闪发光');
+    }
+    console.log(Animal.addr);
+    Animal.eye();
+	</script>
+</head>
+<body>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-自定义静态成员</title>
+    <script type="text/javascript">
+    function Animal(){
+        this.name = "七匹狼";
+        this.color = "gray";
+    }
+
+    Animal.addr = "north";
+    Animal.eye = function(){
+        console.log('晚上闪闪发光');
+    }
+    console.log(Animal.addr);
+    Animal.eye();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>18-正则-普通字符组成</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+        //正则表达式--普通字符串组成
+
+        //如果没有特殊限制，则会匹配到第一个目标
+        //(不管后边还是否有匹配目标)
+        var reg = /l/;
+        var str = "hello world";
+
+        var reg = /@#!&/;  
+        var str = "this is a computer,2433@#!&@";//@#!&
+
+        //具体匹配
+        //被匹配目标内容.match(正则);
+        var rst = str.match(reg);
+        console.log(rst);
+        
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>18-正则-普通字符组成</title>
+    <script type="text/javascript">
+        var reg = /l/;
+        var str = "hello world";
+
+        var reg = /@#!&/
+        var str = "this is a computer,2433@#!&";
+
+        //具体匹配
+        //被匹配目标内容.match(正则);
+        var rst = str.match(reg);
+        console.log(rst);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>28-对象在内存中的分配</title>
+	<script type="text/javascript">
+      //对象在内存中分配 
+      function Animal(){
+      	this.color = "black";
+      	this.age = 5;
+      	this.run = function(){
+      		console.log('走直线');
+      	}
+      }
+      var cat = new Animal();
+
+      var dog = new Animal();
+
+      var black = cat; //引用赋值
+
+      black.color = "yellow";
+      console.log(cat.color);
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>28-对象在内存中的分配</title>
+      <script type="text/javascript">
+        function Animal(){
+            this.color = "block";
+            this.age = 6;
+            this.run = function(){
+                  console.log('走直线');
+            }
+        }
+
+        var cat = new Animal();
+        var dog = new Animal();
+
+        var block = cat;
+        block.color = "pink";
+        console.log(cat.color);
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

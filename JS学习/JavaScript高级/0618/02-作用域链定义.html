@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02-作用域链定义</title>
+</head>
+<body>
+	<script text="text/javascript">
+      //当前是window环境
+      var name="tom";
+      var age=23;
+      
+      //在js里边，函数就对象，允许有嵌套关系
+      function f1(){
+      	//内部环境
+      	console.log(name);
+      	console.log(age);
+      	function f2(){
+                  //内部"深层环境"
+      		console.log('f2环境');
+      		console.log(name);
+      		console.log(age);
+      		function f3(){
+                        //内部"深层环境"
+      			console.log(name+"--"+age);
+      		}
+                  f3();
+      	}
+            f2();
+      }
+      f1();
+	</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>02-作用域链定义</title>
+      <script type="text/javascript">
+      //当前是wondow环境
+        var name = "tom";
+        var age = 23;
+        //在js里边，函数就对象，允许有嵌套关系
+        function f1(){
+            //内部环境
+            console.log(name);
+            console.log(age);
+            function f2(){
+                  //内部“深层环境”
+                  console.log(name);
+                  console.log(age);
+                  function f3(){
+                        //内部“深层环境”
+                        console.log(name+"--"+age);
+                  }
+                  f3();
+            }
+            f2();
+        }
+        f1();
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

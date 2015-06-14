@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>长峰家具</title>
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/index - 副本.css"/>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/hotimg.js"></script>
+
+ <script type="text/javascript">
+ <!--
+//公共脚本文件 main.js
+function addEvent(obj,evtType,func,cap){
+    cap=cap||false;
+ if(obj.addEventListener){
+     obj.addEventListener(evtType,func,cap);
+  return true;
+ }else if(obj.attachEvent){
+        if(cap){
+         obj.setCapture();
+         return true;
+     }else{
+      return obj.attachEvent("on" + evtType,func);
+  }
+ }else{
+  return false;
+    }
+}
+function getPageScroll(){
+    var xScroll,yScroll;
+ if (self.pageXOffset) {
+  xScroll = self.pageXOffset;
+ } else if (document.documentElement && document.documentElement.scrollLeft){
+  xScroll = document.documentElement.scrollLeft;
+ } else if (document.body) {
+  xScroll = document.body.scrollLeft;
+ }
+ if (self.pageYOffset) {
+  yScroll = self.pageYOffset;
+ } else if (document.documentElement && document.documentElement.scrollTop){
+  yScroll = document.documentElement.scrollTop;
+ } else if (document.body) {
+  yScroll = document.body.scrollTop;
+ }
+ arrayPageScroll = new Array(xScroll,yScroll);
+ return arrayPageScroll;
+}
+function GetPageSize(){
+    var xScroll, yScroll;
+    if (window.innerHeight && window.scrollMaxY) { 
+        xScroll = document.body.scrollWidth;
+        yScroll = window.innerHeight + window.scrollMaxY;
+    } else if (document.body.scrollHeight > document.body.offsetHeight){
+        xScroll = document.body.scrollWidth;
+        yScroll = document.body.scrollHeight;
+    } else {
+        xScroll = document.body.offsetWidth;
+        yScroll = document.body.offsetHeight;
+    }
+    var windowWidth, windowHeight;
+    if (self.innerHeight) {
+        windowWidth = self.innerWidth;
+        windowHeight = self.innerHeight;
+    } else if (document.documentElement && document.documentElement.clientHeight) {
+        windowWidth = document.documentElement.clientWidth;
+        windowHeight = document.documentElement.clientHeight;
+    } else if (document.body) {
+        windowWidth = document.body.clientWidth;
+        windowHeight = document.body.clientHeight;
+    } 
+    if(yScroll < windowHeight){
+        pageHeight = windowHeight;
+    } else { 
+        pageHeight = yScroll;
+    }
+    if(xScroll < windowWidth){ 
+        pageWidth = windowWidth;
+    } else {
+        pageWidth = xScroll;
+    }
+    arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight) 
+    return arrayPageSize;
+}
+//广告脚本文件 AdMove.js
+/*
+例子
+<div id="Div2">
+    ***** content ******
+</div>
+var ad=new AdMove("Div2");
+ad.Run();
+*/
+////////////////////////////////////////////////////////
+var AdMoveConfig=new Object();
+AdMoveConfig.IsInitialized=false;
+AdMoveConfig.ScrollX=0;
+AdMoveConfig.ScrollY=0;
+AdMoveConfig.MoveWidth=0;
+AdMoveConfig.MoveHeight=0;
+AdMoveConfig.Resize=function(){
+    var winsize=GetPageSize();
+    AdMoveConfig.MoveWidth=winsize[2];
+    AdMoveConfig.MoveHeight=winsize[3];
+    AdMoveConfig.Scroll();
+}
+AdMoveConfig.Scroll=function(){
+    var winscroll=getPageScroll();
+    AdMoveConfig.ScrollX=winscroll[0];
+    AdMoveConfig.ScrollY=winscroll[1];
+}
+addEvent(window,"resize",AdMoveConfig.Resize);
+addEvent(window,"scroll",AdMoveConfig.Scroll);
+function AdMove(id){
+    if(!AdMoveConfig.IsInitialized){
+        AdMoveConfig.Resize();
+        AdMoveConfig.IsInitialized=true;
+    }
+    var obj=document.getElementById(id);
+    obj.style.position="absolute";
+    var W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+    var H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+    var x = W*Math.random(),y = H*Math.random();
+    var rad=(Math.random()+1)*Math.PI/6;
+    var kx=Math.sin(rad),ky=Math.cos(rad);
+    var dirx = (Math.random()<0.5?1:-1), diry = (Math.random()<0.5?1:-1);
+    var step = 1;
+    var interval;
+    this.SetLocation=function(vx,vy){x=vx;y=vy;}
+    this.SetDirection=function(vx,vy){dirx=vx;diry=vy;}
+    obj.CustomMethod=function(){
+        obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+        obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+        rad=(Math.random()+1)*Math.PI/6;
+        W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+        H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+        x = x + step*kx*dirx;
+        if (x < 0){dirx = 1;x = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (x > W){dirx = -1;x = W;kx=Math.sin(rad);ky=Math.cos(rad);}
+        y = y + step*ky*diry;
+        if (y < 0){diry = 1;y = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (y > H){diry = -1;y = H;kx=Math.sin(rad);ky=Math.cos(rad);}
+    }
+    this.Run=function(){
+        var delay = 10;
+        interval=setInterval(obj.CustomMethod,delay);
+        obj.onmouseover=function(){clearInterval(interval);}
+        obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);}
+    }
+}
+ //-->
+ </script>
+
+</head>
+
+<body>
+
+   <div id="header">
+     <div id="logo">
+        <div class="logotop">
+          <ul>
+            <li><a href="###">设为主页</a>/</li>
+            <li><a href="###">加入收藏</a>/</li>
+            <li><a href="###">帮助中心</a>
+           </ul>
+        </div>
+        <div class="logoleft"><h1>长峰家具有限公司</h1></div>
+        <div class="logoright">
+           <p class="chang">CHANG FENG</p>
+           <p class="furni">FURNI TURE</p>
+        </div> 
+     </div>
+     <div id="nav">
+       <ul>
+       <li><a href="index.html">首页</a></li>
+       <li>
+          <dl>
+            <dt><a href="chanpin.html">产品展示</a></dt>
+            <dd><a href="###">长峰家具</a></dd>
+            <dd><a href="###">盛世缔豪</a></dd>
+          </dl>
+        </li> 
+       <li><a href="dinggou.html">产品订购</a></li>
+       <li><a href="changshi.html">家具常识</a></li>
+       <li><a href="news.html">业界新闻</a></li>
+       <li><a href="jieshao.html">企业介绍</a></li>
+       <li><a href="about.html">联系我们</a></li>
+       </ul>
+     </div>
+     
+     <div class="stars"></div>
+     <div class="yijiaren"></div>
+     <div id="xiang">
+        <div id="xiangimg">
+          <div id="box1">
+            <div class="list">
+                    <ul>
+                        <li><img src="images/imagesone/1.jpg" width="352" height="244" /></li>
+                        <li><img src="images/imagesone/2.jpg" width="352" height="244" /></li>
+                        <li><img src="images/imagesone/3.jpg" width="352" height="244" /></li>
+                        <li><img src="images/imagesone/4.jpg" width="352" height="244" /></li>
+                        <li><img src="images/imagesone/5.jpg" width="352" height="244" /></li>
+                        <li><img src="images/imagesone/6.jpg" width="352" height="244" /></li>
+                    </ul>
+             </div>
+          </div> 
+        </div>
+        <div class="word"></div>
+     </div>
+     <div class="hudie"></div>
+     <div class="hua"></div>
+     <div class="teng"><img src="images/imagesone/teng.gif" /></div>
+   </div>
+
+   
+   <div id="contents">
+      <div id="shang">
+         <div id="sidebar">
+            <div class="sidebar1">
+               <h1>产品分类</h1>
+               <ul id="wenchuan">
+                  <li><a href="###">套房系列 Suite Furniture</a></li>
+                  <li><a href="###">沙发系列 Sofa Furnture</a></li>
+                  <li><a href="###">儿童系列 Childer Furture</a></li>
+                  <li><a href="###">其他系列 Other Furiture</a></li>
+               </ul>
+            </div>
+            <div id="sidebar2">
+               <h1>最新公告</h1>
+               <div id="sb2">
+               <ul>
+             <marquee direction=up scrollamount=1 scrolldelay=100 onmouseover='this.stop()' onmouseout='this.start()' height=141>
+                  <li><a href="###">>>本公司新出一套客厅··· [2011-07-16]</a></li>
+                  <li><a href="###">>>公司招聘五名导购······ [2011-06-28]</a></li>
+                  <li><a href="###">>>双节将至，优惠不断··· [2011-04-30]</a></li>
+                  <li><a href="###">>>本公司新出一套客厅··· [2011-07-16]</a></li>
+                  <li><a href="###">>>公司招聘五名导购······ [2011-06-28]</a></li>
+                  <li><a href="###">>>双节将至，优惠不断··· [2011-04-30]</a></li>
+        </marquee>
+               </ul>
+               </div>  
+            </div>
+         </div>
+         <div id="indexright">
+                  <div id="hot">
+           <div class="hotword">
+              <h1>HOT</h1>  <h2>SALES</h2>  <h3>热销产品</h3>
+           </div>
+           <div class="hotimages">
+              <div class="more"><a href="###">more >></a></div>
+              
+                  <div id="scroll_div" class="scroll_div">
+      <div id="scroll_begin">
+                 <ul>
+                    <li class="hotimg1"><a href="subchanpin.html"><img src="images/imagesone/hot01.jpg" /></a>
+</li>
+                    <li><a href="subchanpin.html"><img src="images/imagesone/hot02.jpg" /></a></li>
+                    <li><a href="subchanpin.html"><img src="images/imagesone/hot03.jpg" /></a></li>
+                    <li><a href="subchanpin.html"><img src="images/imagesone/hot04.jpg" /></a></li>
+                 </ul>
+      </div>
+      <div id="scroll_end"></div>
+    </div>
+    <!--#####滚动区域#####-->
+</div>
+<script type="text/javascript">ScrollImgLeft();</script>
+</div>
+
+         <div id="new">
+           <div class="hotword">
+              <h1>HOT</h1>  <div class="sales"><h2>PRODUCTS</h2></div>  <h3>热销产品</h3>
+           </div>
+           <div class="hotimages">
+              <div class="more"><a href="###">more >></a></div>
+         <div id="hotimg">
+              
+             <ul>
+                    <li class="hotimg1"><a href="subchanpin.html"><img src="images/imagesone/hot1.jpg" /></a></li>
+                    <li><a href="subchanpin.html"><img src="images/imagesone/hot2.jpg" /></a></li>
+                    <li><a href="subchanpin.html"><img src="images/imagesone/hot2.jpg" /></a></li>
+                    <li><a href="subchanpin.html"><img src="images/imagesone/hot2.jpg" /></a></li>
+                 </ul>
+
+               <div id="hotwd">
+                 <ul>
+                     <li class="hotwd1">F22沙发</li>
+                     <li>620沙发</li>
+                     <li>607沙发</li>
+                     <li>F22沙发</li> 
+                 </ul>
+               </div> 
+              </div>
+
+           </div>
+         </div>
+         </div>
+        
+      </div>
+      <div id="zhong">
+         <div id="zhongleft">
+            <ul class="leftchang">
+               <li>长峰家具有限公司是一家设计、</li>
+               <li>生产、销售办公、民用、沙发系列的</li>
+               <li>家具公司。成立于上世纪九十年代，</li>
+               <li>位于河南省荥阳市火车站东，占地面</li>
+               <li>积10000平方米，现有员工200余人，</li>
+            </ul>
+            <ul class="leftqi">
+            <li class="qizhong">其中高级工程师5人，专业技术人员90人。</li>
+            <li class="xiangxi"><a href="###">[详细]</a></li>
+            </ul>
+         </div>
+         <div id="zhongright">
+         <ul class="jjcs">
+            <li class="wdjjcs">家居常识</li>
+            <li class="imgjjcs"><img src="images/imagesone/10.jpg" /></li>
+         <ul>
+         <ul class="jianbie">
+            <li><a href="subnews2.html">如何鉴别劣质家具？消费者在购买家具时，疑惑明明······[2011-07-18]</a></li>
+            <li><a href="subnews2.html">如何鉴别劣质家具？消费者在购买家具时，疑惑明明······[2011-07-18]</a></li>
+            <li><a href="subnews2.html">如何鉴别劣质家具？消费者在购买家具时，疑惑明明······[2011-07-18]</a></li>
+            <li><a href="subnews2.html">如何鉴别劣质家具？消费者在购买家具时，疑惑明明······[2011-07-18]</a></li>
+            <li><a href="subnews2.html">如何鉴别劣质家具？消费者在购买家具时，疑惑明明······[2011-07-18]</a></li>
+         </ul>
+         </div>
+      </div>
+      <div id="xia">
+         <div class="xiaimages"></div>
+        <div id="lianjie">
+         <div id="lianjie1">
+
+            <ul>
+                        <marquee direction=up scrollamount=1 scrolldelay=100 onmouseover='this.stop()' onmouseout='this.start()' height=25>
+
+               <li class="lz"><a href="###">励志工作室</a></li>
+               <li class="ljcf"><a href="###">长峰家具有限公司</a></li>
+               <li class="fh"><a href="###">凤凰网</a></li>
+               <li class="cctv"><a href="###">cctv官网</a></li>
+               <li class="xl"><a href="###">新浪网</a></li>
+               <li class="bd"><a href="###">百度</a></li>
+               <li class="ge"><a href="###">谷歌</a></li>
+               <li class="lz"><a href="###">励志工作室</a></li>
+               <li class="ljcf"><a href="###">长峰家具有限公司</a></li>
+               <li class="fh"><a href="###">凤凰网</a></li>
+               <li class="cctv"><a href="###">cctv官网</a></li>
+               </marquee>
+            </ul>
+            
+        </div>
+     
+ </div>
+   </div>
+
+   <div id="footer">
+      <div class="footerimg"><img src="images/imagesone/15.jpg" /></div>
+      <li class="gywm">关于我们 | 意见反馈 | 友情链接 | 联系我们 | 帮助中心 | 设为首页 | 加入收藏</li>
+      <li>Copyright & 2010-2011 长峰家具有限公司 All Rights Reserved</li>
+      <li>豫ICP备12345678号 技术支持：励志工作室</li>
+   </div>
+          <div id="gg1"><img src="images/imagesone/banner.jpg" /></div>
+       <script type="text/javascript">
+    <!--
+        var ad1=new AdMove("gg1");
+        ad1.Run();
+    //-->
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>05-原型继承</title>
+	<script type="text/javascript">
+    //① 原型继承--“构造函数”继承单一成员
+    function Tiger(){
+    	this.color = "black and yellow";
+    	this.leg = 4;
+    	this.act = function(){
+    		console.log('猛虎扑食');
+    	}
+    }
+
+    Tiger.prototype.addr = "孟加拉";
+
+    Tiger.prototype.climb = function(){
+    	console.log('在爬树');
+    }
+
+    var smal = new Tiger;
+    console.log(smal);
+    console.log(smal.addr); //孟加拉
+    smal.climb(); //在爬树
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-原型继承</title>
+    <script type="text/javascript">
+    function Tiger(){
+        this.color = "black and yellow";
+        this.leg = 4;
+        this.act = function(){
+            console.log('猛虎扑食');
+        }
+    }
+
+    Tiger.prototype.addr = "孟加拉";
+    Tiger.prototype.climb = function(){
+        console.log('在爬树');
+    }
+
+    var smal = new Tiger;
+    console.log(smal);
+    console.log(smal.addr);
+    smal.climb();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

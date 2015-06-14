@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9-14 插入节点appendChild()</title>
+</head>
+
+<body>
+<ul id="test">
+  <li>JavaScript</li>
+  <li>HTML</li>
+</ul> 
+ 
+<script type="text/javascript">
+  var otest = document.getElementById("test");  
+  var newnode = document.createElement("li");
+  var newtext= document.createTextNode("PHP"); 
+  newnode.appendChild(newtext); 
+  otest.appendChild(newnode);         
+</script> 
+</body>
+</html>

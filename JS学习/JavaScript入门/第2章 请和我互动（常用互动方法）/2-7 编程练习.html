@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> new document </title>
+  <script type="text/javascript">  
+    function openWindon(){
+    var dakai=confirm("是否打开新窗口");
+    if(dakai==true){
+        var wangzhi=prompt("请输入网址：","http://www.imooc.com/");
+           window.open('wangzhi','width=400px,height=500px,menubar=no,toolbar=no')
+    }else{
+        alert("Bye bye!");
+    }
+   }   
+    //打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。
+    
+    
+  </script> 
+</head> 
+<body> 
+ <form>
+	  <input type="button" value="新窗口打开网站" onclick="openWindon()" /> 
+ </form>
+</body>
+</html>

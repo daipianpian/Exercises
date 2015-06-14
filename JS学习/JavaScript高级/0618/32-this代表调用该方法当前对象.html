@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>32-this代表调用该方法当前对象</title>
+	<script type="text/javascript">
+      //call()和apply()对函数进行调用
+
+      var addr = "china";
+      var age = 9;
+      function getInfo(ht,cl){
+      	console.log(ht+"--"+cl+"--"+this.addr+"--"+this.age);
+      }
+      getInfo(); //内部this代表window
+
+      //获得一个对象
+      var cat = {addr:'北京',age:4};
+      cat.say = getInfo;
+
+      cat.say(25,'white'); //say函数内部this代表带用该方法的当前对象
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>32-this代表调用该方法当前对象</title>
+      <script type="text/javascript">
+      var addr = "china";
+      var age = 6;
+
+      function getInfo(ct,cl){
+            console.log(ct+"--"+cl+"--"+this.addr+"--"+this.age);
+      }
+
+      getInfo();
+
+      var cat = {addr:'aaa',age:2};
+      cat.say = getInfo;
+      console.log(cat);
+
+      cat.say('cc',4);
+      console.log(cat);
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>3-13 编程练习</title>
+		<style type="text/css">
+
+		</style>
+		<script src="jquery-1.8.2.js"></script>
+	</head>
+
+	<body>
+		<ul>
+			<li>001</li>
+			<li>002</li>
+			<li>003</li>
+			<li>004</li>
+            <li>005</li>
+			<li>006</li>
+			<li>007</li>
+		</ul>
+		<a href="javascript:;">MORE</a>
+		<script type="text/javascript">
+          $(function(){
+          	$("li:eq(3)").css("display:none");
+          	$("li:eq(4)").css("display:none");
+          	$("a").click(function(){
+          		if ($("a").text()==="MORE"){
+          			$("a").text("simplify");
+          			$("li:eq(3)").css("display","list-item");
+          			$("li:eq(4)").css("display","list-item");
+          		}
+          		else{
+          			$("a").text("MORE");
+          			$("li:eq(3)").css("display","none");
+          			$("li:eq(4)").css("display","none");
+          		}
+          	});
+          });
+		</script>
+	</body>
+</html>

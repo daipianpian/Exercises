@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>18-闭包-数组</title>
+      <script type="text/javascript">
+        //闭包-制作数组
+        var num=new Array();
+        //当for循环执行第一次的时候
+        for(var i=0; i<=5; i++){
+            num[i]=f1(i); //把闭包传递给当前元素
+        }
+        /*
+         通过f1()函数调用，给每个num元素传递一个闭包，这样大家访问的信息都
+         是各自闭包的信息，每个闭包在内存中都单独存在，没有交集的地方
+        */
+        function f1(n){
+            //n=0传递给f2进行输出
+            function f2(){
+                console.log(n);
+            }
+            return f2;
+        }
+        num[3](); //3
+        num[0](); //0
+        num[1](); //1
+        num[2](); //2
+        num[4](); //4
+        num[5](); //5
+        //num[6](); //is not function
+        /*
+        num[0]=function(){console.log(0)}
+        num[1]=function(){console.log(1)}
+        num[2]=function(){console.log(2)}
+        ......
+        num[5]=function(){console.log(5)}
+        */
+
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

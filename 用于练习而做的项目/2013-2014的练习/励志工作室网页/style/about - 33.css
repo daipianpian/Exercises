@@ -1,0 +1,174 @@
+body{
+	width:1261px;
+	margin:0 auto;
+	background:url(../images/img2/body-bg2.jpg) repeat-x;
+}
+#content{
+	width:959px;
+	height:1223px;
+	background:#fff;
+}
+#banner{
+	width:960px;
+	height:196px;
+	background:url(../images/img2/banner.jpg);
+}
+#underbanner{
+	width:932px;
+	height:37px;
+	border-bottom:1px solid #697686;
+}
+#underbanner h2{
+	width:100px;
+	margin-left:9px;
+	margin-top:-13px;
+}
+.underbanner1{
+	font-size:16px;
+}
+.underbanner2{
+	width:200px;
+	height:14px;
+	font-size:14px;
+	margin-left:680px;
+	margin-top:-27px;
+}
+#bothtwo{
+	width:960px;
+	clear:both;
+}
+#left{
+	width:171px;
+	height:877px;
+	margin-left:18px;
+	margin-top:15px;
+	float:left;
+	background:url(../images/img2/siderbarBlue.jpg) no-repeat;
+}
+#left ul{
+	width:140px;
+	color:#000;
+	font-size:15px;
+	margin-left:15px;
+	margin-right:15px;
+	margin-top:28px;
+}
+#left ul li{
+	width:140px;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	margin-bottom:15px;
+	border-bottom:1px solid #000;	
+}
+#left ul li a{
+	width:140px;
+	height:27px;
+	line-height:33px;
+    color:#000;
+	margin-top:0px;
+    text-decoration:none;
+    display:inline-block;
+}
+#left ul li a:hover{
+    color:#000;
+    text-decoration:none;
+    background:url(../images/img2/li_bg0.png) no-repeat center;
+}
+#left ul li dl{ 
+    position:relative;
+}
+#left ul li dl dt.chengyuan a{
+	text-decoration:none;
+}
+#left ul li dl dt.chengyuan a:hover{
+	background:url(../images/img2/li_bg.gif) no-repeat center;
+}
+#left ul li dl dd{
+	width:100px;
+	height:27px;
+	margin-left:50px;
+	margin-top:5px;
+	display:none;
+	color:#000;
+	font-size:14px;
+	line-height:27px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#left ul li dl dd a{
+	display:block;
+	width:100px;
+	height:27px;
+	line-height:30px;
+	font-size:14px;
+	text-decoration:none;
+}
+#left ul li:hover dd,#nav ul li dl dd a:hover{
+	width:100px;
+	height:27px;
+	display:block;
+	color:#F00;
+}
+#left ul li dl dd a:hover{
+	color:#F00;
+	background:url(../images/img2/li_bg1.png) no-repeat bottom;
+}
+#right{
+	width:657px;
+	height:877px;
+	margin-top:15px;
+	color:#535353;
+	line-height:160%;
+	margin-left:22px;
+	font-size:13px;
+	float:left;
+}
+.right1{
+	width:657px;
+	height:156px;
+	margin-bottom:30px;
+}
+.right2{
+	width:156px;
+	height:156px;
+	float:left;
+	margin-right:11px;
+}
+.right5{
+	width:156px;
+	height:156px;
+	float:left;
+}
+.right3{
+	width:156px;
+	height:130px;
+}
+.right4{
+	width:156px;
+	height:12px;
+	font-size:12px;
+	line-height:12px;
+	text-align:center;
+	margin-top:13px;
+}
+.right4 a{
+	text-decoration:none;
+}
+.right4 a:hover{
+	color:#F00;
+	text-decoration:none;
+}
+#rightfooter{
+	text-align:center;
+}
+.rightfooter1{
+	width: 100%;
+	cellpadding:0;
+	cellspacing:0;
+}
+.rightfooter2{
+	width:580px; 
+	font-size:13px; 
+	cursor:pointer;
+}

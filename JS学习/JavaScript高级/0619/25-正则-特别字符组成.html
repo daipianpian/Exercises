@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>25-正则-特别字符组成</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <script type="text/javascript">
+        
+        //() 小括号模式单元
+        //   模式单元数目计算
+        //① 模式单元平级情况 从左边往右边计算
+        //② 如果括号嵌套，先计算外部括号，再计算里边括号
+        //["2014-6-19 16:51:20", "2014-6-19", "2014", "6", "16:51:20"]
+        var reg = /((2014)-(6)-19) (16:51:20)/;
+        var str = "2014-6-19 16:51:20";
+
+        var reg = /([a-z]+ ([a-z]+)) ([a-z]+,[a-z]+)/;
+        var str = "tom like apple,and very like";
+        //['tom like apple,and','tom like','like','apple,and']
+        var rst = str.match(reg);
+        console.log(rst);
+        </script>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+
+    <body>
+
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>25-正则-特别字符组成</title>
+    <script type="text/javascript">
+    var reg = /((2014)-(6)-19) (16:51:20)/;
+    var str = "2014-6-19 16:51:20";
+
+    var reg = /([a-z]+ ([a-z]+)) ([a-z]+,[a-z]+)/;
+    var str = "tom like apple,and very like";
+
+    var rst = str.match(reg);
+    console.log(rst);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

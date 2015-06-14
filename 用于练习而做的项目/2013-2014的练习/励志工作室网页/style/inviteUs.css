@@ -1,0 +1,122 @@
+body{
+	width:1261px;
+	margin:0 auto;
+	background:url(../images/img3/body-bg2.jpg) repeat-x;
+}
+#content{
+	width:959px;
+	height:1241px;
+	background:#fff;
+}
+#banner{
+	width:960px;
+	height:198px;
+}
+#underbanner{
+	width:932px;
+	height:37px;
+	border-bottom:1px solid #697686;
+}
+#underbanner h2{
+	width:100px;
+	margin-left:9px;
+	margin-top:-15px;
+}
+.underbanner1{
+	font-size:16px;
+}
+.underbanner2{
+	width:200px;
+	height:14px;
+	font-size:14px;
+	margin-left:754px;
+	margin-top:-22px;
+}
+#bothtwo{
+	width:960px;
+	clear:both;
+}
+#left{
+	width:171px;
+	height:877px;
+	margin-left:18px;
+	margin-top:15px;
+	float:left;
+	background:url(../images/img2/siderbarBlue.jpg) no-repeat;
+}
+#left ul{
+	width:140px;
+	color:#000;
+	font-size:15px;
+	margin-left:15px;
+	margin-right:15px;
+	margin-top:28px;
+}
+#left ul li{
+	width:140px;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	margin-bottom:15px;
+	border-bottom:1px solid #000;	
+}
+#left ul li a{
+	width:140px;
+	height:27px;
+	line-height:33px;
+	*line-height:27px;
+    color:#000;
+	margin-top:0px;
+    text-decoration:none;
+    display:inline-block;
+}
+#left ul li a:hover{
+    color:#000;
+    text-decoration:none;
+    background:url(../images/img2/li_bg0.png) no-repeat center;
+}
+#right{
+	width:611px;
+	height:957px;
+	margin-top:47px;
+	color:#535353;
+	line-height:160%;
+	margin-left:76px;
+	font-size:13px;
+	float:left;
+}
+.right1{
+	color:#000000;
+	font-size:15px;
+	font-weight:bold;
+}
+.right2{
+	color:#905390;
+}
+.right3{
+	color:#faa439;
+	font-size:15px;
+	font-weight:bold;
+}
+.right3 a{
+	color:#faa439;
+}
+.right3 a:hover{
+	color:#faa439;
+}
+.right4{
+	color:##535353;
+	font-size:14px;
+	margin-bottom:18px;
+}
+.right5{
+	color:##535353;
+	font-size:14px;
+	margin-top:8px;
+	margin-bottom:18px;
+}
+.right6{
+	color:##535353;
+	font-size:14px;
+	margin-bottom:38px;
+}
